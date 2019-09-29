@@ -94,3 +94,8 @@ File :arrow_right: Preferences :arrow_right: Keyboard Shortcuts and then click o
 ## More Notes
 
 * The EDA computers also install [`git-iam`](https://npmjs.com/package/git-iam) globally, but there is no need to install this on personal laptops/computers.
+
+## Contributing
+
+If you find some of these instructions too ambiguous or hard to follow, we would love it if you issued a pull request to improve this doc. :heart:
+

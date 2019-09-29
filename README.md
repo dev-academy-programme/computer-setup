@@ -47,7 +47,7 @@ File :arrow_right: Preferences :arrow_right: Settings
 
 This enables `CMD+b` to automatically fix as many linting errors/warnings as it can with a single shortcut. You might need to use a different shortcut if you're on MacOS or Windows. If `cmd+b` doesn't work for you, try `meta+b` (meta is the Alt key) or `ctrl+shift+b`.
 
-File :arrow_right: Preferences :arrow_right: Keyboard Shortcuts (and then click on `keybindings.json`). Use this as the contents.
+File :arrow_right: Preferences :arrow_right: Keyboard Shortcuts and then click on the icon in the top-right to _Open Keyboard Shortcuts (JSON)_. Use this as the contents.
 
 ```js
 [

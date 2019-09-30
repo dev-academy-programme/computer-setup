@@ -25,8 +25,15 @@ eslint-plugin-standard@4.0.0
 
 ## 2. Install VS Code extensions
 
-  * ESLint
-  * vscode-icons (optional, but pretty :wink:)
+Run the following commands in the terminal to install `ESLint`, `Bracket Pair Colorizer 2`, and `Auto Complete Tag` extensions, respectively:
+
+```sh
+code --install-extensions dbaeumer.vscode-eslint
+code --install-extensions coenraads.bracket-pair-colorizer-2
+code --install-extensions formulahendry.auto-complete-tag
+# Optional: vscode-icons
+# code --install-extensions vscode-icons-team.vscode-icons
+```
 
 
 ## 3. Edit VS Code's User Settings

@@ -33,7 +33,7 @@ eslint-plugin-standard@4.0.0
 
 File :arrow_right: Preferences :arrow_right: Settings
 
-```js
+```json
 {
   "editor.tabSize": 2,
   "workbench.iconTheme": "vscode-icons"
@@ -49,7 +49,7 @@ This enables `CMD+b` to automatically fix as many linting errors/warnings as it 
 
 File :arrow_right: Preferences :arrow_right: Keyboard Shortcuts and then click on the icon in the top-right to _Open Keyboard Shortcuts (JSON)_. Use this as the contents.
 
-```js
+```json
 [
   {
     "key": "cmd+b",

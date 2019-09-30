@@ -28,11 +28,11 @@ eslint-plugin-standard@4.0.0
 Run the following commands in the terminal to install `ESLint`, `Bracket Pair Colorizer 2`, and `Auto Complete Tag` extensions, respectively:
 
 ```sh
-code --install-extensions dbaeumer.vscode-eslint
-code --install-extensions coenraads.bracket-pair-colorizer-2
-code --install-extensions formulahendry.auto-complete-tag
+code --install-extension dbaeumer.vscode-eslint
+code --install-extension coenraads.bracket-pair-colorizer-2
+code --install-extension formulahendry.auto-complete-tag
 # Optional: vscode-icons
-# code --install-extensions vscode-icons-team.vscode-icons
+# code --install-extension vscode-icons-team.vscode-icons
 ```
 
 

@@ -26,7 +26,11 @@ eslint-plugin-standard@4.0.0
 ## 2. Install VS Code extensions
 
   * ESLint
+  * WSL - Remote (windows 10 only)
+  * Live Share (online students only)
   * vscode-icons (optional, but pretty :wink:)
+  * Bracket Pair Colorizer (optional)
+  * GitLens (optional)
 
 
 ## 3. Edit VS Code's User Settings
@@ -45,7 +49,7 @@ File :arrow_right: Preferences :arrow_right: Settings
 
 ## 4. Edit VS Code's `keybindings.json`
 
-This enables `CMD+b` to automatically fix as many linting errors/warnings as it can with a single shortcut. You might need to use a different shortcut if you're on MacOS or Windows. If `cmd+b` doesn't work for you, try `meta+b` (meta is the Alt key) or `ctrl+shift+b`.
+This enables `cmb+b` to automatically fix as many linting errors/warnings as it can with a single shortcut. You might need to use a different shortcut if you're on MacOS or Windows. If `CMD+b` doesn't work for you, try `meta+b` (meta is the Alt key) or `ctrl+shift+b`.
 
 File :arrow_right: Preferences :arrow_right: Keyboard Shortcuts and then click on the icon in the top-right to _Open Keyboard Shortcuts (JSON)_. Use this as the contents.
 

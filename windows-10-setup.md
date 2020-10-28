@@ -40,60 +40,12 @@
     - `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash`
 1. Move the 3 nvm lines from the bottom of `.bashrc` to the bottom of `.zshrc`
 1. Change the oh-my-zsh theme to 'bira'
+1. Restart your terminal
 1. `nvm install --lts`
-1. In your Windows Terminal install some global npm packages
-    ```sh
-    npm install -g \
-    eslint@5.16.0 \
-    babel-eslint@10.0.1 \
-    eslint-config-standard@12.0.0 \
-    eslint-plugin-import@2.17.3 \
-    eslint-plugin-node@9.1.0 \
-    eslint-plugin-promise@4.1.1 \
-    eslint-plugin-react@7.13.0 \
-    eslint-plugin-standard@4.0.0
-    ```
-1. Add a global ESLint config file to your home folder
-    - Run `code .` in your Ubuntu terminal
-    - Paste in these contents
+
+1. Enable the automatic fixing of linting errors on file save by adding this to your `settings.json`
     ```js
-    {
-      "parser": "babel-eslint",
-      "env": {
-        "browser": true,
-        "node": true,
-        "jest": true
-      },
-      "extends": [
-        "eslint:recommended",
-        "plugin:react/recommended",
-        "standard"
-      ],
-      "plugins": [
-        "standard",
-        "promise"
-      ],
-      "rules": {
-        "eol-last": ["error", "always"],
-        "no-multiple-empty-lines": [
-          "error", { "max": 1, "maxEOF": 0, "maxBOF": 0 }
-        ],
-        "object-curly-spacing": [2, "always"],
-        "react/prop-types": "off"
-      },
-      "settings": {
-        "react": { "version": "detect" }
-      }
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
     }
-    ```
-    - Save the file as `.eslintrc.json` in your home folder.
-1. Add a shortcut key to auto-format JavaScript. In VS Code, go to top menu and select Code :arrow_right: Preferences :arrow_right: Keyboard Shortcuts and then select the turning page icon in top right to see `keybindings.json`. Paste in these contents.
-    ```js
-    [
-      {
-        "key": "shift+alt+b",
-        "command": "eslint.executeAutofix",
-        "when": "editorFocus"
-      }
-    ]
     ```

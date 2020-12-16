@@ -1,9 +1,17 @@
 # MacOS and Linux Computer Setup for EDA
 
 1. Start the terminal and install zsh and make it the default shell
-    - `sudo apt-get install zsh`
-    - `chsh -s $(which zsh)`
-    - Restart the terminal (or log out and log back in to your computer)
+    - Linux
+        - `sudo apt-get install zsh`
+        - `chsh -s $(which zsh)`
+        - Restart the terminal (or log out and log back in to your computer)
+    - MacOS
+        - Install [Homebrew](https://brew.sh/) with `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
+        - Verify it is setup correctly with `brew doctor`
+        - You will be requested to install the Command Line Developer Tools from Apple. Confirm by clicking Install. After the installation finished, continue installing Homebrew by hitting Return again.
+        - Install zsh with `brew install zsh`
+        - Make it the default shell: `sudo sh -c "echo $(which zsh) >> /etc/shells" && chsh -s $(which zsh)`
+        - Restart the terminal (or log out and log back in to your computer)
 1. Open a terminal and if you are prompted to make a choice, choose `q`.
 1. Install oh-my-zsh from inside the terminal
     - `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`

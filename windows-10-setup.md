@@ -17,7 +17,7 @@
     "startingDirectory": "//wsl$/Ubuntu-20.04/home/[your_username]"
     ```
 1. Restart the Windows Terminal and install some required libraries including zsh and make it the default shell
-    - `sudo apt-get install build-essential python zsh`
+    - `sudo apt-get install build-essential python-is-python3 zsh`
     - `chsh -s $(which zsh)`
     - Restart the Windows Terminal
 1. Install oh-my-zsh from inside the Windows Terminal

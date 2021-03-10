@@ -32,7 +32,7 @@
     - GitLens (optional)
 1. Install nvm
     - `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash`
-1. Move the 3 nvm lines from the bottom of `.bashrc` to the bottom of `.zshrc`
+1. Move the 3 nvm lines from the bottom of `~/.bash_profile` (or if they aren't there, check out `~/.bashrc`) to the bottom of `~/.zshrc`
 1. Change the oh-my-zsh theme at the top of the `.zshrc` file from `bobbyrussell` to `bira`.
 1. `nvm install --lts`
 

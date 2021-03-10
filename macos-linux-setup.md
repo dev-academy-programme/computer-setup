@@ -1,6 +1,12 @@
 # MacOS and Linux Computer Setup for EDA
 
-1. Start the terminal and install zsh and make it the default shell (NOTE: zsh might already be your default shell. Your terminal should indicate this.)
+1. Start the terminal and make `zsh` the default shell
+    - Run `which zsh` in your terminal
+      - An output to the tune of `zsh not found` means you'll need to install `zsh` by following the OS specific instructions below.
+      - But if you get `/bin/zsh`...
+        - Run `chsh -s $(which zsh)`
+        - Restart the terminal (or log out and back into your computer)
+        - Move on to step 2
     - Linux
         - `sudo apt-get install zsh`
         - `chsh -s $(which zsh)`

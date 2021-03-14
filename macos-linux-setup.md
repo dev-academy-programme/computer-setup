@@ -1,23 +1,23 @@
 # MacOS and Linux Computer Setup for EDA
 
 1. Start the terminal and make `zsh` the default shell
-    - Run `which zsh` in your terminal
-      - An output to the tune of `zsh not found` means you'll need to install `zsh` by following the OS specific instructions below.
-      - But if you get `/bin/zsh`...
+    - Run `zsh --version` in your terminal to determine if you already have `zsh` installed
+      - If you do:
         - Run `chsh -s $(which zsh)`
         - Restart the terminal (or log out and back into your computer)
-        - Move on to step 2
-    - Linux
-        - `sudo apt-get install zsh`
-        - `chsh -s $(which zsh)`
-        - Restart the terminal (or log out and log back in to your computer)
-    - MacOS
-        - Install [Homebrew](https://brew.sh/) with `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
-        - Verify it is setup correctly with `brew doctor`
-        - You will be requested to install the Command Line Developer Tools from Apple. Confirm by clicking Install. After the installation finished, continue installing Homebrew by hitting Return again.
-        - Install zsh with `brew install zsh`
-        - Make it the default shell: `sudo sh -c "echo $(which zsh) >> /etc/shells" && chsh -s $(which zsh)`
-        - Restart the terminal (or log out and log back in to your computer)
+        - Move on to step 2      
+      - If not, you'll need to install it by following the OS specific instructions below:
+        - Linux
+          - `sudo apt-get install zsh`
+          - `chsh -s $(which zsh)`
+          - Restart the terminal (or log out and log back in to your computer)
+        - MacOS
+          - Install [Homebrew](https://brew.sh/) with `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
+          - Verify it is setup correctly with `brew doctor`
+          - You will be requested to install the Command Line Developer Tools from Apple. Confirm by clicking Install. After the installation finished, continue installing Homebrew by hitting Return again.
+          - Install zsh with `brew install zsh`
+          - Make it the default shell: `sudo sh -c "echo $(which zsh) >> /etc/shells" && chsh -s $(which zsh)`
+          - Restart the terminal (or log out and log back in to your computer)
 1. Open a terminal and if you are prompted to make a choice, choose `q`.
 1. Install oh-my-zsh from inside the terminal
     - `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
@@ -36,13 +36,9 @@
 1. Change the oh-my-zsh theme at the top of the `.zshrc` file from `bobbyrussell` to `bira`.
 1. `nvm install --lts`
 
-1. Add a shortcut key to auto-format JavaScript. In VS Code, go to top menu and select Code :arrow_right: Preferences :arrow_right: Keyboard Shortcuts and then select the turning page icon in top right to see `keybindings.json`. Paste in these contents.
+1. Enable the automatic fixing of linting errors on file save by adding this to your `settings.json`. In VS Code, click the settings cog button in the bottom left and open the Command Palette. Type in `settings.json` and click on the 'Preferences: Open Settings (JSON)' option. Paste in these contents.
     ```js
-    [
-      {
-        "key": "shift+alt+b",
-        "command": "eslint.executeAutofix",
-        "when": "editorFocus"
-      }
-    ]
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    }
     ```

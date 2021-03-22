@@ -10,11 +10,11 @@
     - Open Ubuntu and let it finish installation. If it says installing for more than 5 minutes, close the Ubuntu window and re-open it
 1. Configure your Windows Terminal
     - Select the dropdown next to the new tab button and select Settings
-    - Change the value of the `defaultProfile` property to the value of the Ubuntu's `guid` property
-    - Add these properties to the Ubuntu section
+    - In the file change the value of the `defaultProfile` property to the value of the Ubuntu's `guid` property _(which you should see lower down in the file)_
+    - Add these properties to the Ubuntu section 
     ```js
     "colorScheme": "One Half Dark",
-    "startingDirectory": "//wsl$/Ubuntu-20.04/home/[your_username]"
+    "startingDirectory": "//wsl$/Ubuntu-20.04/home/YOUR_USERNAME"
     ```
 1. Restart the Windows Terminal and install zsh and make it the default shell
     - `sudo apt-get install zsh`

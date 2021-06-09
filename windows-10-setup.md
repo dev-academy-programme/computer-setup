@@ -126,14 +126,14 @@ VIDEO WALKTHOUGH: https://youtu.be/pwn4zknR5TU
 We recommend that you store all your Foundations and Bootcamp files, folders and repos within your WSL (Linux) folder structure, NOT in 'My Documents' or some other Windows directory. 
 
 If you need to access your Linux folder structure from Windows Explorer, the path will be something like this: `C:\Users\[your_Windows_username]\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu20.04onWindows_79rhkp1fndgsc\LocalState\rootfs\home\[your_Linux_username]`
-- You won't need this very often but you might like to make a shortcut to this folder just in case
+- You won't need this very often but you might like to make a Windows shortcut to this folder just in case
 - The path might be slightly different on your computer - if you can't figure it out, then in Windows Explorer do a search for `rootfs` with 'Kind' set to 'folder' (this search might take ten minutes or so)
 
-If you need to navigate to your Windows folder structure from Linux, the path will be something like this here: `/mnt/c/Users/[your_Windows_username]/Documents`
+If you need to navigate to your Windows folder structure from Linux, the path will be something like this: `/mnt/c/Users/[your_Windows_username]/Documents`
 
 If you already have some files in a Windows folder and you want to copy them into the Linux folder structure: 
 1. Make sure the Windows folder that your files are in has no spaces in the filename (if there are spaces, then rename the folder without spaces)
-1. Suppose your files are in `C:/Users/[your_Windows_username]/Documents/Dev-Academy` and you want to copy them to a new `dev-academy` folder in Linux... so, in your terminal paste this command: `cp -r /mnt/c/Users/[your_Windows_username]/Documents/Dev-Academy dev-academy`
+1. Suppose your files are in `C:/Users/[your_Windows_username]/Documents/Dev-Academy` and you want to copy them to a new `dev-academy` folder in Linux... then, in your terminal paste this command: `cp -r /mnt/c/Users/[your_Windows_username]/Documents/Dev-Academy dev-academy`
     - Make sure you replace `c/Users/[your_Windows_username]/Documents/Dev-Academy` with your actual filepath and username
     - If you have lots of files this may take several hours to run, you might like to set it running before you go to bed
     - This will create the new `dev-academy` folder, you don't need to do `mkdir`

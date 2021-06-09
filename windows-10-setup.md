@@ -27,7 +27,7 @@ VIDEO WALKTHOUGH: https://youtu.be/pwn4zknR5TU
        },
     ```
 
-    Copy the value of the "guid" field, then paste it in to the `defaultProfile` property near the top of the file.
+    - Copy the value of the "guid" field, then paste it in to the `defaultProfile` property near the top of the file.
     
     ```js
         "defaultProfile": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
@@ -38,7 +38,7 @@ VIDEO WALKTHOUGH: https://youtu.be/pwn4zknR5TU
     "colorScheme": "One Half Dark",
     "startingDirectory": "//wsl$/Ubuntu-20.04/home/[your_Linux_username]"
     ```
-    Once you have pasted it in, your Linux section should look like this (but instead of `maia`, it would say YOUR username):
+    - Once you have pasted it in, your Linux section should look like this (but instead of `maia`, it would say YOUR username):
 
     ```js
             {
@@ -64,7 +64,7 @@ VIDEO WALKTHOUGH: https://youtu.be/pwn4zknR5TU
 1. In your Ubuntu terminal, open VS Code with `code .`
 1. Install the following VS Code extensions
     - ESLint
-    - WSL - Remote
+    - Remote - WSL
     - Live Share (online students only)
     - vscode-icons (optional, but pretty :wink:)
     - Bracket Pair Colorizer (optional)
@@ -87,11 +87,11 @@ VIDEO WALKTHOUGH: https://youtu.be/pwn4zknR5TU
     ```
 
     - Run this command to open your .zshrc file: `code ~/.zshrc`
-    - Paste the nvm lines you cut from the .bashrc file down at the bottom of the .zshrc file.
+    - Paste the nvm lines you cut from the .bashrc file down at the bottom of the .zshrc file
 1. Get rid of the distracting green highlighting in your terminal (optional, but recommended):
     - In your .zshrc file (that you opened in the above step), find this line and uncomment it (i.e. delete the `#`):
     ```
-    DISABLE LS_COLORS=”true”
+    # DISABLE LS_COLORS="true"
     ```
 1. Change the oh-my-zsh theme to 'bira'
     - Scroll to the top of the .zshrc file and replace the `ZSH_THEME=` value with 'bira'
@@ -126,16 +126,16 @@ VIDEO WALKTHOUGH: https://youtu.be/pwn4zknR5TU
 We recommend that you store all your Foundations and Bootcamp files, folders and repos within your WSL (Linux) folder structure, NOT in 'My Documents' or some other Windows directory. 
 
 If you need to access your Linux folder structure from Windows Explorer, the path will be something like this: `C:\Users\[your_Windows_username]\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu20.04onWindows_79rhkp1fndgsc\LocalState\rootfs\home\[your_Linux_username]`
-- It might be slightly different on your computer
 - You won't need this very often but you might like to make a shortcut to this folder just in case
+- The path might be slightly different on your computer - if you can't figure it out, then in Windows Explorer do a search for `rootfs` with 'Kind' set to 'folder' (this search might take ten minutes or so)
 
 If you need to navigate to your Windows folder structure from Linux, the path will be something like this here: `/mnt/c/Users/[your_Windows_username]/Documents`
 
 If you already have some files in a Windows folder and you want to copy them into the Linux folder structure: 
 1. Make sure the Windows folder that your files are in has no spaces in the filename (if there are spaces, then rename the folder without spaces)
-1. Suppose your files are in `C:/Users/[your_Windows_username]/Documents/Dev-Academy` and you want to copy them to a new `dev-academy` folder in Linux. Then, in your terminal paste this command: `cp -r /mnt/c/Users/[your_Windows_username]/Documents/Dev-Academy dev-academy`
+1. Suppose your files are in `C:/Users/[your_Windows_username]/Documents/Dev-Academy` and you want to copy them to a new `dev-academy` folder in Linux... so, in your terminal paste this command: `cp -r /mnt/c/Users/[your_Windows_username]/Documents/Dev-Academy dev-academy`
     - Make sure you replace `c/Users/[your_Windows_username]/Documents/Dev-Academy` with your actual filepath and username
-    - If you have lots of files this may take several hours to run, we'd recommend setting it running before you go to bed
+    - If you have lots of files this may take several hours to run, you might like to set it running before you go to bed
     - This will create the new `dev-academy` folder, you don't need to do `mkdir`
-    - Don't try to use Windows Explorer to copy the files, because they will end up with the wrong permissions in Linux
+    - Don't try to use Windows Explorer to copy the files to Linux, because they will end up with the wrong permissions in Linux
     - Once you're sure your files are safely in Linux, you can delete them from the Windows file structure

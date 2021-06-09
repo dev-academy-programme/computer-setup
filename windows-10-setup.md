@@ -35,9 +35,9 @@ https://youtu.be/pwn4zknR5TU
     - Next, add these properties to the Ubuntu section. (The same section you got the "guid" from in the previous step). 
     ```js
     "colorScheme": "One Half Dark",
-    "startingDirectory": "//wsl$/Ubuntu-20.04/home/[your_username]"
+    "startingDirectory": "//wsl$/Ubuntu-20.04/home/[your_Linux_username]"
     ```
-    Once you have pasted it in, your Linux section should look like this (but instead of josep, it would say YOUR username):
+    Once you have pasted it in, your Linux section should look like this (but instead of maia, it would say YOUR username):
 
     ```js
             {
@@ -46,7 +46,7 @@ https://youtu.be/pwn4zknR5TU
                 "name": "Ubuntu-20.04",
                 "source": "Windows.Terminal.Wsl",
                 "colorScheme": "One Half Dark",
-                "startingDirectory": "//wsl$/Ubuntu-20.04/home/josep"
+                "startingDirectory": "//wsl$/Ubuntu-20.04/home/maia"
             },
     ```
 1. Restart the Windows Terminal and install some required libraries including zsh and make it the default shell
@@ -86,6 +86,11 @@ https://youtu.be/pwn4zknR5TU
 
     - Run this command to open your .zshrc file: `code ~/.zshrc`
     - Paste the nvm lines you cut from the .bashrc file down at the bottom of the .zshrc file.
+1. Get rid of the distracting green highlighting in your terminal:
+    - In your .zshrc file (that you opened in the above step), find this line and uncomment it (i.e. delete the `#`):
+    ```
+    DISABLE LS_COLORS=”true”
+    ```
 1. Change the oh-my-zsh theme to 'bira'
     - Scroll to the top of the .zshrc file and replace the ZSH_THEME= value with 'bira'
 1. Restart your terminal
@@ -105,6 +110,8 @@ https://youtu.be/pwn4zknR5TU
     eslint-plugin-react@7.13.0 \
     eslint-plugin-standard@4.0.0
     ```
+1. Make VS Code your default Git editor
+    - Run this command in your terminal: `git config --global core.editor "code --wait"`
 1. Enable the automatic fixing of linting errors on file save by adding this to your `settings.json` in VS Code:
     ```js
     "editor.codeActionsOnSave": {
@@ -112,3 +119,12 @@ https://youtu.be/pwn4zknR5TU
     }
     ```
 1. Restart your PC
+
+## Information about where to save your files
+We recommend that you store all your Foundations and Bootcamp files, folders and repos within your WSL (Linux) folder structure, NOT in 'My Documents' or some other Windows directory. 
+
+If you need to open these files/folders in Windows Explorer, the path will be something like this: `C:\Users\[your_Windows_username]\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu20.04onWindows_79rhkp1fndgsc\LocalState\rootfs\home\[your_Linux_username]`
+
+If you need to navigate to your Windows folder structure from Linux, the path will be something like this here: `/mnt/c/Users/[your_Windows_username]/Documents`
+
+If you already have some files in a Windows folder and you want to copy them into the Linux folder structure, you can 

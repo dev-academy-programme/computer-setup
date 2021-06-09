@@ -127,4 +127,11 @@ If you need to open these files/folders in Windows Explorer, the path will be so
 
 If you need to navigate to your Windows folder structure from Linux, the path will be something like this here: `/mnt/c/Users/[your_Windows_username]/Documents`
 
-If you already have some files in a Windows folder and you want to copy them into the Linux folder structure, you can 
+If you already have some files in a Windows folder and you want to copy them into the Linux folder structure, you can copy them into Linux. 
+1. Make sure the Windows folder that your files are in has no spaces in the filename (if there are spaces, then rename it)
+1. Suppose your files are in `C:/Users/[your_Windows_username]/Documents/Dev-Academy` and you want to copy them to a new `dev-academy` folder in Linux. Then, in your terminal paste this command: `cp -r /mnt/c/Users/[your_Windows_username]/Documents/Dev-Academy dev-academy`
+    - Make sure you replace `c/Users/[your_Windows_username]/Documents/Dev-Academy` with your actual filepath and username
+    - If you have lots of files this may take several hours to run, we'd recommend setting it running before you go to bed
+    - This will create the new `dev-academy` folder, you don't need to do `mkdir`
+    - Don't try to use Windows Explorer to copy the files, because they will end up with the wrong permissions in Linux
+    - Once you're sure your files are safely in Linux, you can delete them from the Windows file structure

@@ -80,7 +80,7 @@ VIDEO WALKTHOUGH: https://youtu.be/pwn4zknR5TU
     - Run this command to open your .bashrc config file: `code ~/.bashrc`
     - Scroll down to the bottom of the file and cut the three lines at the bottom that look like this: 
 
-    ```j
+    ```
         export NVM_DIR="$HOME/.nvm"
         [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
         [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
@@ -98,20 +98,6 @@ VIDEO WALKTHOUGH: https://youtu.be/pwn4zknR5TU
 1. Restart your terminal
 1. Install the latest version of nvm 
     - Run this command in your terminal: `nvm install --lts`
-1. In your Windows Terminal install some global npm packages
-    - Copy/paste in this entire chunk of code (if you get a warning about multiple lines of text, click 'Paste anyway'):
- 
-    ```sh
-    npm install -g \
-    eslint@5.16.0 \
-    babel-eslint@10.0.1 \
-    eslint-config-standard@12.0.0 \
-    eslint-plugin-import@2.17.3 \
-    eslint-plugin-node@9.1.0 \
-    eslint-plugin-promise@4.1.1 \
-    eslint-plugin-react@7.13.0 \
-    eslint-plugin-standard@4.0.0
-    ```
 1. Make VS Code your default Git editor
     - Run this command in your terminal: `git config --global core.editor "code --wait"`
 1. Enable the automatic fixing of linting errors on file save by adding this to your `settings.json` in VS Code:

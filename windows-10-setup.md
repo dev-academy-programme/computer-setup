@@ -126,8 +126,11 @@ If you already have some files in a Windows folder (e.g. your Foundations repos)
     - Don't try to use Windows Explorer to copy the files to Linux, because they will end up with the wrong permissions in Linux
     - Once you're sure your files are safely in Linux, you can delete them from the Windows file structure
 
-## Running VS Code in WSL/Ubuntu mode (you'll need this information once you start Bootcamp, but you don't need to do anything now)
+## Running VS Code in WSL/Ubuntu mode 
+
+- You'll need this information once you start Bootcamp, but you don't need to do anything now
+
 During Bootcamp you should open VS Code by typing `code .` from your Ubuntu terminal, not by opening it from your Start menu, desktop etc. You'll know you've done it right because your VS Code window will have a green rectangle with ">< WSL:Ubuntu-20.04" in the bottom left-hand corner. If your green rectange is smaller and only has "><" then you're running VS Code in Windows/local mode, which is not what you want.
 
-You can open a terminal within VS Code by choosing Terminal -> New Terminal from the VS Code menu, or Ctrl + Shift + \` (that charcter is called a backtick - it's at the top left of your keyboard, on the same key as the "~" tilde character). It's fine to use this VS Code terminal for most purposes (running your code, git commits, etc.). But when you do `npm install` actions you should do them in your actual Ubuntu terminal, not in the terminal within VS Code. If you don't know what `npm install` means yet, don't worry, you will soon!
+You can open a terminal within VS Code by choosing Terminal -> New Terminal from the VS Code menu, or Ctrl + Shift + \` (that character is called a backtick - it's at the top left of your keyboard, on the same key as the "~" tilde character). It's fine to use this VS Code terminal for most purposes (running your code, git commits, etc.). But when you do `npm install` actions you should do them in your actual Ubuntu terminal, not in the terminal within VS Code. If you don't know what `npm install` means yet, don't worry, you will soon!
 

@@ -35,7 +35,8 @@
 1. Move the 3 nvm lines from the bottom of `~/.bash_profile` (or if they aren't there, check out `~/.bashrc`) to the bottom of `~/.zshrc`
 1. Change the oh-my-zsh theme at the top of the `.zshrc` file from `bobbyrussell` to `bira`.
 1. `nvm install --lts`
-
+1. Make VS Code your default Git editor
+    - Run this command in your terminal: `git config --global core.editor "code --wait"`
 1. Enable the automatic fixing of linting errors on file save by adding this to your `settings.json`. In VS Code, click the settings cog button in the bottom left and open the Command Palette. Type in `settings.json` and click on the 'Preferences: Open Settings (JSON)' option. Paste in these contents.
     ```js
     "editor.codeActionsOnSave": {

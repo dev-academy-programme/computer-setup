@@ -1,7 +1,7 @@
 # Windows 10 Computer Setup for EDA
 Instructions to help you set up the Linux subsystem on Windows 10
 
-VIDEO WALKTHOUGH: https://youtu.be/pwn4zknR5TU
+VIDEO WALKTHOUGH: https://www.youtube.com/watch?v=pwn4zknR5TU 
 
 1. Install the Windows Subsystem for Linux
     - Control Panel -> Programs -> Turn Windows Features on or off

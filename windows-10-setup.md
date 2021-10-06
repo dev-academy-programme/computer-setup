@@ -118,7 +118,7 @@ If you need to access your Linux folder structure from Windows Explorer, the pat
 
 **WSL 2:** `\\wsl$\Ubuntu-20.04\home\[your_Linux_username]` or `\wsl.localhost\Ubuntu-20.04\home\[your_Linux_username]`
 
-- Optional: You won't need this very often but you might like to make a Windows shortcut to this folder just in case. 
+Optional: You won't need this very often but you might like to make a Windows shortcut to this folder just in case. 
 
 If you need to navigate to your Windows folder structure from Linux, the path will be something like this: `/mnt/c/Users/[your_Windows_username]/Documents`
 

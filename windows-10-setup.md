@@ -51,7 +51,8 @@ VIDEO WALKTHOUGH: https://www.youtube.com/watch?v=pwn4zknR5TU
             },
     ```
 1. Install some required libraries including zsh, make zsh the default shell, and restart your Windows Terminal
-    - Put this command into your terminal: `sudo apt-get install build-essential python-is-python3 zsh`
+    - Put this command into your terminal: `sudo apt-get update`
+    - Then this command: `sudo apt-get install build-essential python-is-python3 zsh`
     - Then this command: `chsh -s $(which zsh)`
     - Restart the Windows Terminal
     - If you get a page full of info about "This is the Z Shell configuration for new users...", press q (Quit and do nothing)

@@ -64,7 +64,8 @@ VIDEO WALKTHOUGH: https://www.youtube.com/watch?v=pwn4zknR5TU
 1. Install oh-my-zsh from inside the Windows Terminal
     - Enter this command into your terminal (note that it's one long line, even if it displays as two lines on the page where you're reading this): `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
     - Restart the terminal and open an Ubuntu tab with the little plus button in the top left corner
-    - For the remainder of these instructions, and at the start of Bootcamp, when we say "terminal" we mean an Ubuntu tab like this, within the Windows Terminal application -- you'll know it's right if you can see the penguin! (During Bootcamp you'll also learn how to run a terminal within VS Code but please DON'T use that for these setup steps, and please don't use Git Bash for any Bootcamp work.)
+        - For the remainder of these instructions, and at the start of Bootcamp, when we say "terminal" we mean an Ubuntu tab like this, within the Windows Terminal application -- you'll know it's right if you can see the penguin! 
+        - During Bootcamp you'll also learn how to run a terminal within VS Code but please DON'T use that for these setup steps, and please don't use Git Bash for any Bootcamp work.
     - If the prompt in your terminal is now a little arrow and a tilde (~), instead of "yourname@...", that's OK (you'll change it again in a later step)
 1. Install VS Code if it isn't already installed
     - https://code.visualstudio.com/download

@@ -73,7 +73,6 @@ VIDEO WALKTHOUGH: https://www.youtube.com/watch?v=pwn4zknR5TU
     - Remote - WSL
     - Live Share (online students only)
     - vscode-icons (optional, but pretty :wink:)
-    - Bracket Pair Colorizer (optional)
     - GitLens (optional)
 1. Restart your terminal
 1. Open VS Code again with `code .`
@@ -106,13 +105,13 @@ VIDEO WALKTHOUGH: https://www.youtube.com/watch?v=pwn4zknR5TU
     - Run this command in your terminal: `nvm install --lts`
 1. Make VS Code your default Git editor
     - Run this command in your terminal: `git config --global core.editor "code --wait"`
-1. Enable the automatic fixing of linting errors on file save by adding this to your `settings.json` in VS Code:
-    ```js
-    "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true
-    }
+1. Enable automatic colour-coding of brackets and automatic fixing of linting errors on file save, by adding these two lines to your `settings.json` in VS Code:
+    ```json
+    "editor.bracketPairColorization.enabled": true,
+    "editor.codeActionsOnSave": { "source.fixAll.esLint": true }
     ```
-    To find your `settings.json` file, in VS Code press F1 to open the command panel at the top of your screen. In the little search box with the `>` type `settings json` and choose the option `Preferences: Open Settings (JSON)`
+    - To find your `settings.json` file, in VS Code press F1 to open the command panel at the top of your screen. In the little search box type `settings json` and choose the option `Preferences: Open Settings (JSON)`
+    - Note that each entry in your `settings.json` should end in a comma except for the last one, so if there are some existing entries you'll need to add a comma before pasting the above lines
 1. Restart your PC
 
 ## Where to save your files

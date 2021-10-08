@@ -8,7 +8,7 @@ VIDEO WALKTHOUGH: https://www.youtube.com/watch?v=pwn4zknR5TU
     - Select Windows Subsystem for Linux -> OK
     - Restart computer
     
-    Either WSL1 or WSL2 is suitable for bootcamp. If you're setting up from scratch we'd recommend WSL2, but if you already have WSL1 up and running then you may prefer to stick with that. 
+    Either WSL1 or WSL2 is suitable for Bootcamp. If you're setting up from scratch we'd recommend WSL2, but if you already have WSL1 up and running then you may prefer to stick with that. 
     
 1. Install Ubuntu 20 and the Windows Terminal from the Windows Store
     - If you can't install from the Windows Store, make sure you're signing in with your Microsoft Account and have verified your device (Settings -> Accounts)

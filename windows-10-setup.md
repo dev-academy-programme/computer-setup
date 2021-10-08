@@ -3,10 +3,13 @@ Instructions to help you set up the Linux subsystem on Windows 10
 
 VIDEO WALKTHOUGH: https://www.youtube.com/watch?v=pwn4zknR5TU 
 
-1. Install the Windows Subsystem for Linux
+1. Install the Windows Subsystem for Linux (WSL)
     - Control Panel -> Programs -> Turn Windows Features on or off
     - Select Windows Subsystem for Linux -> OK
     - Restart computer
+    
+    Either WSL1 or WSL2 is suitable for bootcamp. If you're setting up from scratch we'd recommend WSL2, but if you already have WSL1 up and running then you may prefer to stick with that. 
+    
 1. Install Ubuntu 20 and the Windows Terminal from the Windows Store
     - If you can't install from the Windows Store, make sure you're signing in with your Microsoft Account and have verified your device (Settings -> Accounts)
     - Also, make sure you're using the most recent version of Windows 10. On the Windows Terminal page in the Store, select System Requirements -> Update
@@ -50,10 +53,12 @@ VIDEO WALKTHOUGH: https://www.youtube.com/watch?v=pwn4zknR5TU
                 "startingDirectory": "//wsl$/Ubuntu-20.04/home/maia"
             },
     ```
-1. Install some required libraries including zsh, make zsh the default shell, and restart your Windows Terminal
+1. Install some required libraries including zsh
     - Put this command into your terminal: `sudo apt-get update`
-    - Then this command: `sudo apt-get install build-essential python-is-python3 zsh`
-    - Then this command: `chsh -s $(which zsh)`
+    - Then this command: `sudo apt-get install build-essential python-is-python3 zsh` (this should install three things: build-essential, python and zsh)
+    - If you get any errors during these installs, we recommend you resolve them before proceeding. Try running `sudo apt-get update --fix-missing` and then running each of the three installs individually: `sudo apt-get install build-essential`, `sudo apt-get install python-is-python3` and `sudo apt-get install zsh`. If you're still getting errors please ask for help in your cohort Slack channel, with details of which install isn't working, and a screen-shot of your error. 
+1. Make zsh the default shell, and restart your Windows Terminal
+    - Put this command into your terminal: `chsh -s $(which zsh)`
     - Restart the Windows Terminal
     - If you get a page full of info about "This is the Z Shell configuration for new users...", press q (Quit and do nothing)
 1. Install oh-my-zsh from inside the Windows Terminal

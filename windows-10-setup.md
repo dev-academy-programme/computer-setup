@@ -59,13 +59,13 @@ VIDEO WALKTHOUGH: https://www.youtube.com/watch?v=pwn4zknR5TU
     - If you get any errors during these installs, we recommend you resolve them before proceeding. Try running `sudo apt-get update --fix-missing` and then running each of the three installs individually: `sudo apt-get install build-essential`, `sudo apt-get install python-is-python3` and `sudo apt-get install zsh`. If you're still getting errors please ask for help in your cohort Slack channel, with details of which install isn't working, and a screen-shot of your error. 
 1. Make zsh the default shell, and restart your Windows Terminal
     - Put this command into your terminal: `chsh -s $(which zsh)`
-    - Restart the Windows Terminal
+    - Restart the Windows Terminal application
     - If you get a page full of info about "This is the Z Shell configuration for new users...", press q (Quit and do nothing)
 1. Install oh-my-zsh from inside the Windows Terminal
     - Enter this command into your terminal (note that it's one long line, even if it displays as two lines on the page where you're reading this): `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
-    - Restart the terminal and open an Ubuntu tab with the little plus button in the top left corner
-        - For the remainder of these instructions, and at the start of Bootcamp, when we say "terminal" we mean an Ubuntu tab like this, within the Windows Terminal application -- you'll know it's right if you can see the penguin! 
-        - During Bootcamp you'll also learn how to run a terminal within VS Code but please DON'T use that for these setup steps, and please don't use Git Bash for any Bootcamp work.
+    - Restart the Windows Terminal application and open an Ubuntu tab using the little plus button in the top left corner
+        - For the remainder of these setup instructions, and at the start of Bootcamp, when we say "terminal" we mean this Ubuntu terminal, i.e. an Ubuntu tab within the Windows Terminal application -- you'll know it's right if you can see the penguin! 
+        - During Bootcamp you'll also learn how to run a terminal within VS Code but please use the Ubuntu terminal for these setup instructions and for any `npm install` actions through out Bootcamp, and please don't use Git Bash for any Bootcamp work
     - If the prompt in your terminal is now a little arrow and a tilde (~), instead of "yourname@...", that's OK (you'll change it again in a later step)
 1. Install VS Code if it isn't already installed
     - https://code.visualstudio.com/download

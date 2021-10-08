@@ -28,7 +28,6 @@
     - ESLint
     - Live Share (online students only)
     - vscode-icons (optional, but pretty :wink:)
-    - Bracket Pair Colorizer (optional)
     - GitLens (optional)
 1. Install nvm
     - `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash`
@@ -37,9 +36,9 @@
 1. `nvm install --lts`
 1. Make VS Code your default Git editor
     - Run this command in your terminal: `git config --global core.editor "code --wait"`
-1. Enable the automatic fixing of linting errors on file save by adding this to your `settings.json`. In VS Code, click the settings cog button in the bottom left and open the Command Palette. Type in `settings.json` and click on the 'Preferences: Open Settings (JSON)' option. Paste in these contents.
-    ```js
-    "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": true
-    }
+1. Enable automatic colour-coding of brackets and automatic fixing of linting errors on file save, by adding these two lines to your `settings.json`. In VS Code, click the settings cog button in the bottom left and open the Command Palette. Type in `settings.json` and click on the 'Preferences: Open Settings (JSON)' option. Paste in these contents.
+     ```json
+    "editor.bracketPairColorization.enabled": true,
+    "editor.codeActionsOnSave": { "source.fixAll.esLint": true }
     ```
+    - Note that each entry in your `settings.json` should end in a comma except for the last one, so if there are some existing entries you'll need to add a comma before pasting the above lines

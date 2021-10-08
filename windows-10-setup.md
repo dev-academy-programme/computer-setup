@@ -112,6 +112,7 @@ VIDEO WALKTHOUGH: https://www.youtube.com/watch?v=pwn4zknR5TU
         "source.fixAll.eslint": true
     }
     ```
+    To find your `settings.json` file, in VS Code press F1 to open the command panel at the top of your screen. In the little search box with the `>` type `settings json` and choose the option `Preferences: Open Settings (JSON)`
 1. Restart your PC
 
 ## Where to save your files

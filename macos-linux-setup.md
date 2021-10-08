@@ -38,8 +38,9 @@
 1. `nvm install --lts`
 1. Make VS Code your default Git editor
     - Run this command in your terminal: `git config --global core.editor "code --wait"`
-1. Enable automatic colour-coding of brackets and automatic fixing of linting errors on file save, by adding these two lines to your `settings.json`. In VS Code, click the settings cog button in the bottom left and open the Command Palette. Type in `settings.json` and click on the 'Preferences: Open Settings (JSON)' option. Paste in these contents.
-     ```json
+1. Enable automatic colour-coding of brackets and automatic fixing of linting errors on file save
+    - In VS Code, click the Settings cog button in the bottom left and open the Command Palette. Type `settings.json` into the little search box that appears at the top of your screen, and then click on the `Preferences: Open Settings (JSON)` option to open your `settings.json` config file. Paste in these contents:
+    ```json
     "editor.bracketPairColorization.enabled": true,
     "editor.codeActionsOnSave": { "source.fixAll.esLint": true }
     ```

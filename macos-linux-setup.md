@@ -32,7 +32,9 @@
 1. Install nvm
     - `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash`
 1. Move the 3 nvm lines from the bottom of `~/.bash_profile` (or if they aren't there, check out `~/.bashrc`) to the bottom of `~/.zshrc`
-1. Change the oh-my-zsh theme at the top of the `.zshrc` file from `bobbyrussell` to `bira`.
+1. Change the oh-my-zsh theme at the top of the `.zshrc` file from `bobbyrussell` to `bira`
+1. Close and reopen your terminal 
+    - If your command prompt now looks different (e.g. showing your computer name) that's a good sign
 1. `nvm install --lts`
 1. Make VS Code your default Git editor
     - Run this command in your terminal: `git config --global core.editor "code --wait"`

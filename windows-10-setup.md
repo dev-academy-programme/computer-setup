@@ -69,7 +69,7 @@ VIDEO WALKTHOUGH: https://www.youtube.com/watch?v=pwn4zknR5TU
     - If the prompt in your terminal is now a little arrow and a tilde (~), instead of "yourname@...", that's OK (you'll change it again in a later step)
 1. Install VS Code if it isn't already installed
     - https://code.visualstudio.com/download
-1. In your terminal, open VS Code with `code .`
+1. In your terminal, open VS Code with `code .` (_don't_ open VS Code from the Start Menu, desktop link or any other way)
 1. Install the following VS Code extensions
     - ESLint
     - Remote - WSL
@@ -105,6 +105,7 @@ VIDEO WALKTHOUGH: https://www.youtube.com/watch?v=pwn4zknR5TU
 1. Restart your terminal
 1. Install the latest version of nvm 
     - Run this command in your terminal: `nvm install --lts`
+    - Then run this command in your terminal: `nvm alias default 14`
 1. Make VS Code your default Git editor
     - Run this command in your terminal: `git config --global core.editor "code --wait"`
 1. Enable automatic colour-coding of brackets and automatic fixing of linting errors on file save
@@ -115,6 +116,27 @@ VIDEO WALKTHOUGH: https://www.youtube.com/watch?v=pwn4zknR5TU
     ```
     - Note that each entry in your `settings.json` should end in a comma except for the last one, so if there are some existing entries you'll need to add a comma before pasting the above lines
 1. Restart your PC
+
+## Testing your setup
+1. Test that you have Node.js installed
+    - Open a new Ubuntu terminal and type `node`
+    - You should see something like this: 
+    ```
+    $ node
+    Welcome to Node.js v14.15.1.
+    Type ".help" for more information.
+    >
+    ```
+    - This is called the REPL ("Read Evaluate Print Loop") 
+    - You should be able to write simple Javascript here, e.g. try typing `2 + 2` or `Math.random()`
+    - When you've finished trying it out, do `Ctrl-C` then `Ctrl-C` again, to get out of the REPL
+1. Test that you can you can clone a repo
+    - From your Ubuntu terminal, clone down any Foundations repo, e.g. `git clone https://github.com/dev-academy-foundations/javascript-carnival` (you've probably already cloned this into your Windows filesystem using Git Bash, but now you're cloning it a second time, into your Linux filesystem)
+        - If you use HTTPS when connecting to GitHub, you'll need to put in your GitHub _token_ when it asks for a password, not your regular GitHub password
+        - Using SSH when connecting to GitHub is also fine
+        - For the repo you just cloned, cd ("change directory") into that folder, e.g. `cd javascript carnival`, then do `code .`
+        - This should open VS Code and you should be able to see the code from that repo
+1. If any of these steps didn't work as expected, please ask for help in Slack or Discord (ideally during week 5 of Foundations, but at least during the week *before* you start Bootcamp)
 
 ## Where to save your files
 We recommend that you store all your Bootcamp files, folders and repos within your WSL (Linux) filesystem. This should happen automatically when you create directories, clone repos, etc. from the Linux command prompt. We recommend you DON'T store your Bootcamp code in a Windows directory like 'My Documents'.

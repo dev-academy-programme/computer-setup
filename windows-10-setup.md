@@ -15,6 +15,7 @@ VIDEO WALKTHOUGH: https://www.youtube.com/watch?v=pwn4zknR5TU
     - Also, make sure you're using the most recent version of Windows 10. On the Windows Terminal page in the Store, select System Requirements -> Update
     - Open Ubuntu and let it finish installation
         - When prompted, enter a username (e.g. your first name) and a password - this is the username that Linux will run as by default
+        - IMPORTANT: When you type in your password, you will notice nothing happens, this is a feature in Linux for security purposes.
         - For Full Name, Room Number, etc. you can hit Enter to leave them blank
         - If it says installing for more than 5 minutes, close the Ubuntu window and re-open it
 1. Configure your Windows Terminal

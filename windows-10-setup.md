@@ -3,21 +3,18 @@ Instructions to help you set up the Linux subsystem on Windows 10
 
 VIDEO WALKTHOUGH: https://www.youtube.com/watch?v=pwn4zknR5TU 
 
-1. Install the Windows Subsystem for Linux (WSL)
-    - Control Panel -> Programs -> Turn Windows Features on or off
-    - Select Windows Subsystem for Linux -> OK
-    - Restart computer
-    
-    Either WSL1 or WSL2 is suitable for Bootcamp. If you're setting up from scratch we'd recommend WSL2, but if you already have WSL1 up and running then you may prefer to stick with that. 
-    
-1. Install Ubuntu 20 and the Windows Terminal from the Windows Store
-    - If you can't install from the Windows Store, make sure you're signing in with your Microsoft Account and have verified your device (Settings -> Accounts)
-    - Also, make sure you're using the most recent version of Windows 10. On the Windows Terminal page in the Store, select System Requirements -> Update
-    - Open Ubuntu and let it finish installation
-        - When prompted, enter a username (e.g. your first name) and a password - this is the username that Linux will run as by default
-        - IMPORTANT: When you type in your password, you will notice nothing happens, this is a feature in Linux for security purposes.
-        - For Full Name, Room Number, etc. you can hit Enter to leave them blank
-        - If it says installing for more than 5 minutes, close the Ubuntu window and re-open it
+1. Go to the start Menu and type `Check for updates`. Make sure that your Windows has the most recent updates. 
+    - Press the Windows key and type `winver` and press Enter 
+    - Confirm that your Windows is version 2004 and higher (Build 19041 and higher) or any Windows 11 version
+    - If your Windows version is less than Build 19041, let one of the facilitators know
+1. Go to the Start Menu and open Windows Powershell as an Administrator
+    - Put this command in Powershell `wsl --install` and hit enter
+    - Restart your computer
+1. Open Ubuntu from the Start Menu and let it finish installation
+    - When prompted, enter a username (e.g. your first name) and a password - this is the username that Linux will run as by default
+    - IMPORTANT: When you type in your password, you will notice nothing happens, this is a feature in Linux for security purposes.
+    - For Full Name, Room Number, etc. you can hit Enter to leave them blank
+    - If it says installing for more than 5 minutes, close the Ubuntu window and re-open it
 1. Configure your Windows Terminal
     - Open your Windows Terminal application and select the dropdown next to the new tab button then select Settings
     - Scroll down until you find this section:

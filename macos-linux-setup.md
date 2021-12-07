@@ -30,15 +30,18 @@
     - vscode-icons (optional, but pretty :wink:)
     - GitLens (optional)
 1. Install nvm
+    - Type `nvm` in your terminal to determine whether you already have nvm, if it returns a bunch of text about Node Version Manager you can skip the next step 
     - `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash`
 1. Move the 3 nvm lines from the bottom of `~/.bash_profile` (or if they aren't there, check out `~/.bashrc`) to the bottom of `~/.zshrc`
 1. Change the oh-my-zsh theme at the top of the `.zshrc` file from `bobbyrussell` to `bira`
 1. Close and reopen your terminal 
     - If your command prompt now looks different (e.g. showing your computer name) that's a good sign
-1. `nvm install --lts`
-1. Make VS Code your default Git editor
+1. Install node
+    - Type `node -v` in your terminal to determine whether you already have node, if it returns a version number, you can skip the next step
+    - `nvm install --lts`
+3. Make VS Code your default Git editor
     - Run this command in your terminal: `git config --global core.editor "code --wait"`
-1. Enable automatic colour-coding of brackets and automatic fixing of linting errors on file save
+4. Enable automatic colour-coding of brackets and automatic fixing of linting errors on file save
     - In VS Code, click the Settings cog button in the bottom left and open the Command Palette. Type `settings.json` into the little search box that appears at the top of your screen, and then click on the `Preferences: Open Settings (JSON)` option to open your `settings.json` config file. Paste in these contents:
     ```json
     "editor.bracketPairColorization.enabled": true,

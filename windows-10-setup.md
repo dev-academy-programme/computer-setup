@@ -1,6 +1,8 @@
 # Windows 10 Computer Setup for EDA
-Instructions to help you set up the Linux subsystem on Windows 10
 
+During Bootcamp we'll be doing all our work inside a Windows Subsystem for Linux (WSL) environment, whereas during Foundations you were working directly within your Windows environment. This means you'll need to work through all the setup steps below, even if you've already been using node, VS Code, etc. in your Windows environment. 
+
+Instructions to help you set up the Linux subsystem on Windows 10
 VIDEO WALKTHOUGH: https://www.youtube.com/watch?v=pwn4zknR5TU 
 
 1. Go to the start Menu and type `Check for updates`. Make sure that your Windows has the most recent updates. 

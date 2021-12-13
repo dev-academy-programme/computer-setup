@@ -19,7 +19,7 @@ VIDEO WALKTHOUGH: https://www.youtube.com/watch?v=pwn4zknR5TU
     - For Full Name, Room Number, etc. you can hit Enter to leave them blank
     - If it says installing for more than 5 minutes, close the Ubuntu window and re-open it
 1. Configure your Windows Terminal
-    - Open your Windows Terminal application and select the dropdown next to the new tab button then select Settings
+    - Open your Windows Terminal application (find this by typing `Windows Terminal` in the Start menu, it is NOT the same as Powershell) and select the dropdown next to the new tab button then select Settings
     - Scroll down until you find this section:
  
     ```json

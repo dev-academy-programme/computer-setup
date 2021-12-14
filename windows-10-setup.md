@@ -6,7 +6,7 @@ During Bootcamp we'll be doing all our work inside a Windows Subsystem for Linux
 
 VIDEO WALKTHOUGH: https://www.youtube.com/watch?v=pwn4zknR5TU 
 
-1. Go to the start Menu and type `Check for updates`. Make sure that your Windows has the most recent updates. 
+1. Go to the start Menu and type `Check for updates`. Make sure that your Windows has the most recent updates (Optional as well as Recommended ones, but you don't need to upgrade to Windows 11 if you don't want to). 
     - Press the Windows key and type `winver` and press Enter 
     - Confirm that your Windows is version 2004 and higher (Build 19041 and higher) or any Windows 11 version
     - If your Windows version is less than Build 19041, let one of the facilitators know

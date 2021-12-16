@@ -104,9 +104,11 @@ VIDEO WALKTHOUGH: https://www.youtube.com/watch?v=pwn4zknR5TU
 1. Change the oh-my-zsh theme to 'bira'
     - Scroll to the top of the .zshrc file and replace the `ZSH_THEME=` value with 'bira'
 1. Restart your terminal
-1. Install the latest version of nvm 
+1. Install the latest version of node (currently v16), but then set it to behave as v14 by default 
     - Run this command in your terminal: `nvm install --lts`
     - Then run this command in your terminal: `nvm alias default 14`
+    - You might get a warning `Version '14' does not exist` but that's OK
+    - If you want to be sure your default version is set as 14, follow Step 1 in the "Testing your setup" section below
 1. Make VS Code your default Git editor
     - Run this command in your terminal: `git config --global core.editor "code --wait"`
 1. Enable automatic colour-coding of brackets and automatic fixing of linting errors on file save

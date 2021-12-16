@@ -104,11 +104,8 @@ VIDEO WALKTHOUGH: https://www.youtube.com/watch?v=pwn4zknR5TU
 1. Change the oh-my-zsh theme to 'bira'
     - Scroll to the top of the .zshrc file and replace the `ZSH_THEME=` value with 'bira'
 1. Restart your terminal
-1. Install the latest "Long Term Support" (i.e. very stable) version of node, currently v16, but then set it to behave as v14 by default 
+1. Install the latest "Long Term Support" (i.e. very stable) version of node
     - Run this command in your terminal: `nvm install --lts`
-    - Then run this command in your terminal: `nvm alias default 14`
-    - You might get a warning `Version '14' does not exist` but that's OK
-    - If you want to be sure your default version is set as 14, follow Step 1 in the "Testing your setup" section below
 1. Make VS Code your default Git editor
     - Run this command in your terminal: `git config --global core.editor "code --wait"`
 1. Enable automatic colour-coding of brackets and automatic fixing of linting errors on file save
@@ -123,10 +120,10 @@ VIDEO WALKTHOUGH: https://www.youtube.com/watch?v=pwn4zknR5TU
 ## Testing your setup
 1. Test that you have Node.js installed
     - Open a new Ubuntu terminal and type `node`
-    - You should see something like this: 
+    - You should see something like this (the exact version number doesn't matter but it should start with `16`): 
     ```
     $ node
-    Welcome to Node.js v14.15.1.
+    Welcome to Node.js v16.13.1.
     Type ".help" for more information.
     >
     ```

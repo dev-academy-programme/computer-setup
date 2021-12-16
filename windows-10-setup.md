@@ -104,7 +104,7 @@ VIDEO WALKTHOUGH: https://www.youtube.com/watch?v=pwn4zknR5TU
 1. Change the oh-my-zsh theme to 'bira'
     - Scroll to the top of the .zshrc file and replace the `ZSH_THEME=` value with 'bira'
 1. Restart your terminal
-1. Install the latest version of node (currently v16), but then set it to behave as v14 by default 
+1. Install the latest "Long Term Support" (i.e. very stable) version of node, currently v16, but then set it to behave as v14 by default 
     - Run this command in your terminal: `nvm install --lts`
     - Then run this command in your terminal: `nvm alias default 14`
     - You might get a warning `Version '14' does not exist` but that's OK

@@ -40,7 +40,7 @@ VIDEO WALKTHOUGH: https://www.youtube.com/watch?v=pwn4zknR5TU
     - Next, add these properties to the Ubuntu section (the same section you got the "guid" from in the previous step) 
     ```json
     "colorScheme": "One Half Dark",
-    "startingDirectory": "//wsl$/Ubuntu-20.04/home/[your_Linux_username]"
+    "startingDirectory": "//wsl$/Ubuntu/home/[your_Linux_username]"
     ```
     - Once you have pasted it in, your Linux section should look like this (but instead of `maia`, it would say YOUR username):
 
@@ -51,7 +51,7 @@ VIDEO WALKTHOUGH: https://www.youtube.com/watch?v=pwn4zknR5TU
                 "name": "Ubuntu-20.04",
                 "source": "Windows.Terminal.Wsl",
                 "colorScheme": "One Half Dark",
-                "startingDirectory": "//wsl$/Ubuntu-20.04/home/maia"
+                "startingDirectory": "//wsl$/Ubuntu/home/maia"
             },
     ```
 1. Install some required libraries including zsh

@@ -78,6 +78,14 @@ VIDEO WALKTHOUGH: https://www.youtube.com/watch?v=pwn4zknR5TU
     - vscode-icons (optional, but pretty :wink:)
     - GitLens (optional)
 1. Restart your terminal
+1. If your terminal is opening at `[user]@machineId /` (slash ending) instead of `[user]@machineId ~` (tilde ending), this means the terminal is opening at root. To make it open at home (~) instead (recommended!), add the following lines to the bottom of your .zshrc file as well:
+
+```
+if [[ $(pwd) == / ]]
+then
+    cd ~
+fi
+```
 1. Open VS Code again with `code .`
     - This should begin downloading the VS Code Server
     - When prompted for access (by Windows Defender Firewall), click "Allow access"

@@ -145,7 +145,8 @@ VIDEO WALKTHOUGH: https://www.youtube.com/watch?v=pwn4zknR5TU
     - When you've finished trying it out, do `Ctrl-C` then `Ctrl-C` again, to get out of the REPL
 1. Test that you can you can clone a repo
     - From your Ubuntu terminal, clone down any Foundations repo, e.g. `git clone https://github.com/dev-academy-foundations/javascript-carnival` (you've probably already cloned this into your Windows filesystem using Git Bash, but now you're cloning it a second time, into your Linux filesystem)
-        - If you use HTTPS when connecting to GitHub, you'll need to put in your GitHub _token_ when it asks for a password, not your regular GitHub password; after you've copied the token to your clipboard, right-click once at the Password prompt to paste it-- you won't see anything pasted, but it will have been pasted and then you can click Enter
+        - If you use HTTPS when connecting to GitHub, you'll need to put in your GitHub _token_ when it asks for a password, not your regular GitHub password
+            - After you've copied the token to your clipboard, right-click once at the Password prompt to paste it-- you won't see anything pasted, but it will have been pasted and then you can click Enter
         - Using SSH when connecting to GitHub is also fine
         - For the repo you just cloned, cd ("change directory") into that folder, e.g. `cd javascript carnival`, then do `code .`
         - This should open VS Code and you should be able to see the code from that repo

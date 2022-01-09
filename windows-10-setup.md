@@ -77,6 +77,13 @@ VIDEO WALKTHOUGH: https://www.youtube.com/watch?v=pwn4zknR5TU
     - Live Share (online students only)
     - vscode-icons (optional, but pretty :wink:)
     - GitLens (optional)
+1. Set up your VS Code editor to treat a tab as 2 spaces (coding in pairs and teams is easier if we all follow the same style convention!): 
+    - In VS Code, click on the Settings icon (the cog in the bottom left corner)
+    - In the `Search settings box` at the top, type `tab`
+    - Check/update the following settings: 
+        - `Detect Indentation` should be unticked
+        - `Insert Spaces` should be ticked
+        - `Tab Size` should be 2
 1. Restart your terminal
 1. If your terminal is opening at `[user]@machineId /` (slash ending) instead of `[user]@machineId ~` (tilde ending), this means the terminal is opening at root. To make it open at home (~) instead (recommended!), add the following lines to the bottom of your .zshrc file as well:
     ```

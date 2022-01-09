@@ -29,6 +29,13 @@
     - Live Share (online students only)
     - vscode-icons (optional, but pretty :wink:)
     - GitLens (optional)
+1. Set up your VS Code editor to treat a tab as 2 spaces (coding in pairs and teams is easier if we all follow the same style convention!): 
+    - In VS Code, click on the `Settings` icon (the cog in the bottom left corner)
+    - In the `Search settings` box at the top, type `tab`
+    - Check/update the following settings: 
+        - `Detect Indentation` should be unticked
+        - `Insert Spaces` should be ticked
+        - `Tab Size` should be 2
 1. Install nvm
     - Type `nvm` in your terminal to determine whether you already have nvm, if it returns a bunch of text about Node Version Manager you can skip this step 
     - `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash`

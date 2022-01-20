@@ -1,6 +1,6 @@
 # MacOS and Linux Computer Setup for EDA
 
-If you haven't already done so, please DO NOT upgrade your iOS (Mac version) to the latest version, Monterey. This is incompatible with Discord screen share and we're waiting on Discord to provide a fix.
+If you are using the latest MacOS (Monterey) please note it is currently incompatible with Discord screen share when using the desktop app. Please use Discord in a Safari browser until a desktop app update & fix becomes available for screen sharing.
 
 1. Start the terminal and make `zsh` the default shell
     - Run `zsh --version` in your terminal to determine if you already have `zsh` installed

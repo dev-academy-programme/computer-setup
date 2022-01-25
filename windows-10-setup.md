@@ -128,14 +128,15 @@ VIDEO WALKTHOUGH: https://www.youtube.com/watch?v=pwn4zknR5TU
     "editor.codeActionsOnSave": { "source.fixAll.eslint": true }
     ```
     - Note that each entry in your `settings.json` should end in a comma except for the last one, so if there are some existing entries you'll need to add a comma before pasting the above lines
-1. Limit your WSL installation so that it can't consume too much RAM
+1. Limit your WSL virtual machine so that it can't consume too much RAM
     - In Windows Explorer, go to `C:\Users\[your_Windows_username]` and create a new text file called `.wslconfig` in that folder 
-    - The body of the `.wslconfig` file should say this (if you have 16GB or more of RAM you could specify `memory=4GB` instead): 
+    - The body of the `.wslconfig` file should say this: 
     ```
     [wsl2]
     memory=2GB # Limits VM memory in WSL2 to 2 GB
     processors=2 # Makes the WSL2 VM use two virtual processors
     ```
+    (if you have 16GB or more of RAM you could specify `memory=4GB` instead)
 1. Restart your PC
 
 ## Testing your setup

@@ -129,8 +129,11 @@ VIDEO WALKTHOUGH: https://www.youtube.com/watch?v=pwn4zknR5TU
     ```
     - Note that each entry in your `settings.json` should end in a comma except for the last one, so if there are some existing entries you'll need to add a comma before pasting the above lines
 1. Limit your WSL virtual machine so that it can't consume too much RAM
-    - In Windows Explorer, go to `C:\Users\[your_Windows_username]` and create a new text file called `.wslconfig` in that folder 
-    - The body of the `.wslconfig` file should say this: 
+    - In File Explorer (aka "Windows Explorer" or "This PC"), go to `C:\Users\[your_Windows_username]`
+    - On the `View` tab, tick the checkboxes for `File name extensions` and `Hidden items`
+    - Right-click in your `C:\Users\[your_Windows_username]` folder and choose `New` then `Text Document`; this will open up Notepad
+    - Rename the new file as `.wslconfig`, making sure that it does NOT have an extra `.txt` extension
+    - Paste this text into body of the `.wslconfig` file, and then save it:
     ```
     [wsl2]
     memory=2GB # Limits VM memory in WSL2 to 2 GB

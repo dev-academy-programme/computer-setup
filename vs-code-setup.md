@@ -6,12 +6,12 @@ Follow these steps in order.
 
 ## 1. Install VS Code extensions
 
-  * ESLint
+  * [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+  * [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
   * WSL - Remote (Windows 10 only)
-  * Live Share (online students only)
-  * GitLens (optional, but recommended)
-  * vscode-icons (optional, but pretty :wink:)
-  * Bracket Pair Colorizer (optional, but potentially helpful)
+  * [Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare) (online students only)
+  * [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) (optional, but recommended)
+  * [vscode-icons](https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons) (optional, but pretty :wink:)
 
 ## 2. Edit VS Code's User Settings
 
@@ -21,7 +21,15 @@ File :arrow_right: Preferences :arrow_right: Settings
 {
   "editor.tabSize": 2,
   "workbench.iconTheme": "vscode-icons",
-  "editor.codeActionsOnSave": { "source.fixAll.eslint": true }
+  "editor.codeActionsOnSave": { "source.fixAll.eslint": true },
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs":"active"
+  "[javascript]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "prettier.semi": false,
+  "prettier.singleQuote": true
 }
 ```
 

@@ -28,6 +28,7 @@ If you are using the latest MacOS (Monterey) please note it is currently incompa
 1. In your terminal, open VS Code with `code .`
 1. Install the following VS Code extensions
     - ESLint
+    - Prettier
     - Live Share (online students only)
     - vscode-icons (optional, but pretty :wink:)
     - GitLens (optional)
@@ -53,7 +54,14 @@ If you are using the latest MacOS (Monterey) please note it is currently incompa
 4. Enable automatic colour-coding of brackets and automatic fixing of linting errors on file save
     - In VS Code, click the Settings cog button in the bottom left and open the Command Palette. Type `settings.json` into the little search box that appears at the top of your screen, and then click on the `Preferences: Open Settings (JSON)` option to open your `settings.json` config file. Paste in these contents:
     ```json
-    "editor.bracketPairColorization.enabled": true,
-    "editor.codeActionsOnSave": { "source.fixAll.eslint": true }
+      "editor.codeActionsOnSave": { "source.fixAll.eslint": true },
+      "editor.bracketPairColorization.enabled": true,
+      "editor.guides.bracketPairs":"active"
+      "[javascript]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+      },
+      "prettier.semi": false,
+      "prettier.singleQuote": true
     ```
     - Note that each entry in your `settings.json` should end in a comma except for the last one, so if there are some existing entries you'll need to add a comma before pasting the above lines

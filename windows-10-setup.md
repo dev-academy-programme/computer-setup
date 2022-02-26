@@ -123,8 +123,8 @@ VIDEO WALKTHOUGH: https://www.youtube.com/watch?v=pwn4zknR5TU
 1. Make VS Code your default Git editor
     - Run this command in your terminal: `git config --global core.editor "code --wait"`
 1. Enable automatic colour-coding of brackets and automatic fixing of linting errors on file save
-    - In VS Code, click the Settings cog button in the bottom left and open the Command Palette. Type `settings.json` into the little search box that appears at the top of your screen, and then click on the `Preferences: Open Settings (JSON)` option to open your `settings.json` config file. Paste in these contents:
-    ```json
+    - In VS Code, click the Settings cog button in the bottom left and open the Command Palette. Type `settings.json` into the little search box that appears at the top of your screen, and then click on the `Preferences: Open Settings (JSON)` option to open your `settings.json` config file. Paste these contents inside the curly brackets:
+ ```json
   "editor.codeActionsOnSave": { "source.fixAll.eslint": true },
   "editor.bracketPairColorization.enabled": true,
   "editor.guides.bracketPairs":"active"
@@ -134,7 +134,7 @@ VIDEO WALKTHOUGH: https://www.youtube.com/watch?v=pwn4zknR5TU
   },
   "prettier.semi": false,
   "prettier.singleQuote": true
-    ```
+  ```
     - Note that each entry in your `settings.json` should end in a comma except for the last one, so if there are some existing entries you'll need to add a comma before pasting the above lines
 1. Limit your WSL virtual machine so that it can't consume too much RAM
     - In File Explorer (aka "Windows Explorer" or "This PC"), go to `C:\Users\[your_Windows_username]`

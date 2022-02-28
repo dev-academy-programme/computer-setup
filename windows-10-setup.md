@@ -153,7 +153,7 @@ VIDEO WALKTHOUGH: https://www.youtube.com/watch?v=pwn4zknR5TU
 
 ## Testing your setup
 1. Test that you have Node.js installed
-    - Open a new Ubuntu terminal and type `node`
+    - Open a new Ubuntu terminal (NOT Git Bash!) and type `node`
     - You should see something like this (the exact version number doesn't matter but it should start with `16`): 
     ```
     $ node

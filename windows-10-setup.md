@@ -86,7 +86,7 @@ VIDEO WALKTHOUGH: https://www.youtube.com/watch?v=pwn4zknR5TU
         - `Insert Spaces` should be ticked
         - `Tab Size` should be 2
 1. Restart your terminal
-1. If your terminal is opening at `[user]@machineId /` (slash ending) instead of `[user]@machineId ~` (tilde ending), this means the terminal is opening at root. To make it open at home (~) instead (recommended!), add the following lines to the bottom of your .zshrc file as well:
+1. If your terminal is opening at a `/` (or `[user]@machineId /`) prompt instead of a `~` (or [user]@machineId ~`) prompt, this means the terminal is opening at root. To make it open at home (~) instead (recommended!), add the following lines to the bottom of your .zshrc file as well:
     ```
     if [[ $(pwd) == / ]]
     then

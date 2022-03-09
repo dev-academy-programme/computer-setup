@@ -23,7 +23,7 @@ File :arrow_right: Preferences :arrow_right: Settings
   "workbench.iconTheme": "vscode-icons",
   "editor.codeActionsOnSave": { "source.fixAll.eslint": true },
   "editor.bracketPairColorization.enabled": true,
-  "editor.guides.bracketPairs":"active"
+  "editor.guides.bracketPairs": "active",
   "[javascript]": {
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode"

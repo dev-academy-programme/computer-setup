@@ -56,7 +56,7 @@ If you are using the latest MacOS (Monterey) please note it is currently incompa
     ```json
       "editor.codeActionsOnSave": { "source.fixAll.eslint": true },
       "editor.bracketPairColorization.enabled": true,
-      "editor.guides.bracketPairs":"active"
+      "editor.guides.bracketPairs": "active",
       "[javascript]": {
         "editor.formatOnSave": true,
         "editor.defaultFormatter": "esbenp.prettier-vscode"

@@ -86,7 +86,7 @@ VIDEO WALKTHOUGH: https://www.youtube.com/watch?v=pwn4zknR5TU
         - `Insert Spaces` should be ticked
         - `Tab Size` should be 2
 1. Restart your terminal
-1. If your terminal is opening at a `/` (or `[user]@machineId /`) prompt instead of a `~` (or `[user]@machineId ~`) prompt, this means the terminal is opening at root. To make it open at home (~) instead (recommended!), add the following lines to the bottom of your .zshrc file as well:
+1. If your terminal is opening at a `/` (or `[user]@machineId /`) prompt instead of a `~` (or `[user]@machineId ~`) prompt, this means the terminal is opening at root. To make it open at home (`~`) instead (recommended!), add the following lines to the bottom of your .zshrc file as well:
     ```
     if [[ $(pwd) == / ]]
     then
@@ -120,6 +120,7 @@ VIDEO WALKTHOUGH: https://www.youtube.com/watch?v=pwn4zknR5TU
 1. Restart your terminal
 1. Install the latest "Long Term Support" (i.e. very stable) version of node
     - Run this command in your terminal: `nvm install --lts`
+    - Then, also in your terminal, run: `nvm alias default node`
 1. Make VS Code your default Git editor
     - Run this command in your terminal: `git config --global core.editor "code --wait"`
 1. Enable automatic colour-coding of brackets and automatic fixing of linting errors on file save

@@ -69,123 +69,7 @@ Once you have pasted it in, your Linux section should look like this (but instea
 },
 ```
 
-## 3. Installing linux software
-
-To install most of the linux software you need, we'll run three commands.
-
-This one updates your package sources:
-
-```sh
-sudo apt-get update
-```
-
-This will install all the packages we need (it might take a while):
-
-```sh
-sudo apt-get install build-essential python-is-python3 zsh
-```
-
-finally, this will set `zsh` as your default shell:
-
-```sh
-chsh -s $(which zsh)
-```
-
-If those all succeeded, you can restart your Ubuntu terminal, and you should be in `zsh`.
-
-If you get a page full of info about "This is the Z Shell configuration for new users...", press q (Quit and do nothing)
-
-### 3.1 Installing oh-my-zsh
-
-oh-my-zsh is a package that
-
-Enter this command into your Ubuntu terminal (note that it's one long line, even if it displays as two lines on the page where you're reading this):
-
-```
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-```
-
-### 3.2 Configuring ZSH
-
-Zsh uses a file in your home directory `~/.zshrc` to set your theme to "bira" run:
-
-```sh
-omz theme set bira
-```
-
-For the remainder of these setup instructions, and at the start of Bootcamp, when we say "terminal" we mean this Ubuntu terminal, i.e. an Ubuntu tab within the Windows Terminal application -- you'll know it's right if you can see the penguin!
-
-At the bottom of this file we'll tell you how to run a terminal within VS Code but please use the Ubuntu terminal for these setup instructions and for any `npm install` actions throughout Bootcamp, and please don't use Git Bash for any Bootcamp work
-
-If the prompt in your terminal is now a little arrow and a tilde (~), instead of "yourname@...", that's OK (you'll change it again in a later step)
-
-### 3.3 Starting in the right directory
-
-Restart your terminal.
-
-If your terminal is opening at a `/` (or `[user]@machineId /`) prompt instead of a `~` (or `[user]@machineId ~`) prompt, this means the terminal is opening at root.
-
-To make it open at home (`~`) instead. We're going to run this snippet to add a couple more lines to the bottom of your `~/.zshrc` file.
-
-```sh
-cat << EOF >> ~/.zshrc
-if [[$(pwd) == /]]; then
-    cd ~
-fi
-EOF
-```
-
-Restart your terminal.
-
-You should now be at the home directory `~`.
-
-### 3.4 Install NVM
-
-NVM is a tool to install and manage NodeJS versions.
-
-First, check if you have node installed
-
-```sh
-which node
-```
-
-If that logs a path in "Program Files", you've installed NodeJS at some point with the official installer. Open Add/Remove Programs from the Start Menu and uninstall NodeJS.
-
-If it logs "node not found", that's perfect. We want NVM to manage node and npm on our dev machine.
-
-Enter this command into your terminal to download and install nvm:
-
-```sh
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash`
-```
-
-This command will initialise NVM when you open a terminal
-
-```sh
-cat << EOF >> ~/.zshrc
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-EOF
-```
-
-### 3.5 Installing Node and NPM with NVM
-
-Install the latest "Long Term Support" (i.e. very stable) version of node
-
-Run this command in your terminal:
-
-```sh
-nvm install --lts
-```
-
-Then, also in your terminal, run:
-
-```sh
-nvm alias default node
-```
-
-## 4. Setup Visual Studio Code
+## 3. Setup Visual Studio Code
 
 Install Visual Studio Code if it isn't already installed
 
@@ -199,7 +83,7 @@ code .
 
 (_don't_ open VS Code from the Start Menu, desktop link or any other way)
 
-### 4.1 Installing extensions
+### 3.1 Installing extensions
 
 Install the following VS Code extensions
 
@@ -229,7 +113,7 @@ eamodio.gitlens
 If you have installed these previously in Windows, you may have to reinstall them for
 WSL.
 
-### 4.2 Visual Studio Code settings
+### 3.2 Visual Studio Code settings
 
 In VS Code:
 
@@ -256,7 +140,7 @@ Paste these contents inside the curly brackets:
 
 Note that each entry in your `settings.json` should end in a comma except for the last one, so if there are some existing entries you'll need to add a comma before pasting the above lines
 
-### 4.3 Make VS Code your default Git editor
+### 3.3 Make VS Code your default Git editor
 
 Run this command in your terminal:
 
@@ -264,7 +148,129 @@ Run this command in your terminal:
 git config --global core.editor "code --wait"
 ```
 
-## 6. Configure WSL
+## 4. Installing linux software
+
+To install most of the linux software you need, we'll run three commands.
+
+This one updates your package sources:
+
+```sh
+sudo apt-get update
+```
+
+This will install all the packages we need (it might take a while):
+
+```sh
+sudo apt-get install build-essential python-is-python3 zsh
+```
+
+finally, this will set `zsh` as your default shell:
+
+```sh
+chsh -s $(which zsh)
+```
+
+If those all succeeded, you can restart your Ubuntu terminal, and you should be in `zsh`.
+
+If you get a page full of info about "This is the Z Shell configuration for new users...", press q (Quit and do nothing)
+
+### 4.1 Installing oh-my-zsh
+
+oh-my-zsh is a package that
+
+Enter this command into your Ubuntu terminal (note that it's one long line, even if it displays as two lines on the page where you're reading this):
+
+```
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
+### 4.2 Configuring ZSH
+
+Zsh uses a file in your home directory `~/.zshrc` to set your theme to "bira" run:
+
+```sh
+omz theme set bira
+```
+
+For the remainder of these setup instructions, and at the start of Bootcamp, when we say "terminal" we mean this Ubuntu terminal, i.e. an Ubuntu tab within the Windows Terminal application -- you'll know it's right if you can see the penguin!
+
+At the bottom of this file we'll tell you how to run a terminal within VS Code but please use the Ubuntu terminal for these setup instructions and for any `npm install` actions throughout Bootcamp, and please don't use Git Bash for any Bootcamp work
+
+If the prompt in your terminal is now a little arrow and a tilde (~), instead of "yourname@...", that's OK (you'll change it again in a later step)
+
+### 4.3 Starting in the right directory
+
+Restart your terminal.
+
+If your terminal is opening at a `/` (or `[user]@machineId /`) prompt instead of a `~` (or `[user]@machineId ~`) prompt, this means the terminal is opening at root.
+
+To make it open at home (`~`) instead. We're going to run this snippet to add a couple more lines to the bottom of your `~/.zshrc` file.
+
+```sh
+cat << EOF >> ~/.zshrc
+if [[ $(pwd) == / ]]; then
+    cd ~
+fi
+EOF
+```
+
+Restart your terminal.
+
+You should now be at the home directory `~`.
+
+### 4.4 Install NVM
+
+NVM is a tool to install and manage NodeJS versions.
+
+First, check if you have node installed
+
+```sh
+which node
+```
+
+If that logs a path in "Program Files", you've installed NodeJS at some point with the official installer. Open Add/Remove Programs from the Start Menu and uninstall NodeJS.
+
+If it logs "node not found", that's perfect. We want NVM to manage node and npm on our dev machine.
+
+Enter this command into your terminal to download and install nvm:
+
+```sh
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash`
+```
+
+This command will initialise NVM when you open a terminal
+
+```sh
+cat << EOF >> ~/.zshrc
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+EOF
+```
+
+### 4.5 Installing Node and NPM with NVM
+
+Install the latest "Long Term Support" (i.e. very stable) version of node
+
+Run this command in your terminal:
+
+```sh
+nvm install --lts
+```
+
+Then, also in your terminal, run:
+
+```sh
+nvm alias default node
+```
+
+To confirm, run this command. We're expecting something in the `v16.x` range
+
+```
+nvm current
+```
+
+## 5. Configure WSL
 
 Limit your WSL virtual machine so that it can't consume too much RAM
 
@@ -282,79 +288,16 @@ processors=2 # Makes the WSL2 VM use two virtual processors
 
 Restart your PC
 
-# Testing your setup
+## 6. You're all set up
 
-Test that you have Node.js installed
-
-- Open a new Ubuntu terminal (NOT Git Bash!) and type `node`
-- You should see something like this (the exact version number doesn't matter but it should start with `16`):
-
+```sh
+npx @donothing/checklist
 ```
 
-$ node
-Welcome to Node.js v16.13.1.
-Type ".help" for more information.
-
->
-
 ```
-
-- This is called the REPL ("Read Evaluate Print Loop")
-- You should be able to write simple Javascript here, e.g. try typing `2 + 2` or `Math.random()`
-- When you've finished trying it out, do `Ctrl-C` then `Ctrl-C` again, to get out of the REPL
-
-1. Test that you can you can clone a repo
-
-- From your Ubuntu terminal, clone down any Foundations repo, e.g. `git clone https://github.com/dev-academy-foundations/javascript-carnival` (you've probably already cloned this into your Windows filesystem using Git Bash, but now you're cloning it a second time, into your Linux filesystem)
-  - If you use HTTPS when connecting to GitHub, you'll need to put in your GitHub _token_ when it asks for a password, not your regular GitHub password
-    - After you've copied the token to your clipboard, right-click once at the Password prompt to paste it-- you won't see anything pasted, but it will have been pasted and then you can click Enter
-  - Using SSH when connecting to GitHub is also fine
-  - For the repo you just cloned, cd ("change directory") into that folder, e.g. `cd javascript carnival`, then do `code .`
-  - This should open VS Code and you should be able to see the code from that repo
-
-1. If any of these steps didn't work as expected, please ask for help in Slack or Discord (ideally during week 5 of Foundations, but at least during the week _before_ you start Bootcamp)
-
-## Where to save your files
-
-We recommend that you store all your Bootcamp files, folders and repos within your WSL (Linux) filesystem. This should happen automatically when you create directories, clone repos, etc. from the Linux command prompt. We recommend you DON'T store your Bootcamp code in a Windows directory like 'My Documents'.
-
-If you need to access your Linux folder structure from Windows Explorer, the path will be something like this:
-
-**WSL 1:** `C:\Users\[your_Windows_username]\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu20.04onWindows_79rhkp1fndgsc\LocalState\rootfs\home\[your_Linux_username]`
-
-- The path might be slightly different on your computer - if you can't figure it out, then in Windows Explorer do a search for `rootfs` with 'Kind' set to 'folder' (this search might take ten minutes or so).
-
-**WSL 2:** `\\wsl$\Ubuntu-20.04\home\[your_Linux_username]` or `\wsl.localhost\Ubuntu-20.04\home\[your_Linux_username]`
-
-Optional: You won't need this very often but you might like to make a Windows shortcut to this folder just in case.
-
-If you need to navigate to your Windows folder structure from Linux, the path will be something like this: `/mnt/c/Users/[your_Windows_username]/Documents`
-
-### Optional - how to copy files from the Windows filesystem to the Linux filesystem
-
-If you already have some files in a Windows folder (e.g. your Foundations repos) and you want to copy them into the Linux folder structure:
-
-1. Make sure the Windows folder that your files are in has no spaces in the filename (if there are spaces, then rename the folder without spaces)
-1. Suppose your files are in `C:/Users/[your_Windows_username]/Documents/Dev-Academy` and you want to copy them to a new `dev-academy` folder in Linux... then, in your terminal paste this command: `cp -r /mnt/c/Users/[your_Windows_username]/Documents/Dev-Academy dev-academy`
-
-- Make sure you replace `c/Users/[your_Windows_username]/Documents/Dev-Academy` with your actual filepath and username
-- If you have lots of files this may take several hours to run
-- This will create the new `dev-academy` folder, you don't need to do `mkdir`
-- Don't try to use Windows Explorer to copy the files to Linux, because they will end up with the wrong permissions in Linux
-- Once you're sure your files are safely in Linux, you can delete them from the Windows file structure
-
-## Running VS Code in WSL/Ubuntu mode
-
-- You'll need this information once you start Bootcamp, but you don't need to do anything now
-
-During Bootcamp you should open VS Code by typing `code .` from your Ubuntu terminal, not by opening it from your Start menu, desktop etc. You'll know you've done it right because your VS Code window will have a green rectangle with ">< WSL:Ubuntu-20.04" in the bottom left-hand corner. If your green rectange is smaller and only has "><" then you're running VS Code in Windows/local mode, which is not what you want.
-
-- If your "green rectangle" is actually mauve or some other colour, that's OK, so long as it says ">< WSL:Ubuntu-20.04"!
-
-You can open a terminal within VS Code by choosing Terminal -> New Terminal from the VS Code menu, or Ctrl + Shift + \` (that character is called a backtick - it's at the top left of your keyboard, on the same key as the "~" tilde character). It's fine to use this VS Code terminal for most purposes (running your code, git commits, etc.). But when you do `npm install` actions you should do them in your actual Ubuntu terminal, not in the terminal within VS Code. If you don't know what `npm install` means yet, don't worry, you will soon!
-
-Once you have one VS Code window open, you can open another one (e.g. for Liveshare) by pressing F1, then selecting "Remote-WSL: New WSL Window".
-
-```
+cat << EOF >> /etc/wsl.conf
+[user]
+default=michael
+EOF
 
 ```

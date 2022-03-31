@@ -172,6 +172,12 @@ chsh -s $(which zsh)
 
 If those all succeeded, you can restart your Ubuntu terminal, and you should be in `zsh`.
 
+run this command:
+
+```
+python --version
+```
+
 If you get a page full of info about "This is the Z Shell configuration for new users...", press q (Quit and do nothing)
 
 ### 4.1 Installing oh-my-zsh
@@ -290,14 +296,32 @@ Restart your PC
 
 ## 6. You're all set up
 
+Run this checklist to double-check everything:
+
 ```sh
 npx @donothing/checklist
 ```
 
-```
-cat << EOF >> /etc/wsl.conf
-[user]
-default=michael
-EOF
+You should see something like this (everything is in the "ok" column):
 
+```
+┌───────────────┬──────────────────────────────────────┐
+│    (index)    │                  ok                  │
+├───────────────┼──────────────────────────────────────┤
+│     uname     │               'Darwin'               │
+│     shell     │              '/bin/zsh'              │
+│  zshVersion   │ 'zsh 5.8 (x86_64-apple-darwin21.0)'  │
+│    nvmDir     │     '/Users/gerard/.nvm exists'      │
+│   nvmConfig   │      'Config found in ~/.zshrc'      │
+│  nodeVersion  │              'v16.13.2'              │
+│  npmVersion   │               '8.5.0'                │
+│ VSCodeVersion │               '1.65.2'               │
+│  gitVersion   │ 'git version 2.32.0 (Apple Git-132)' │
+│   gitEditor   │            'code --wait'             │
+│  pythonPath   │          '/usr/bin/python'           │
+│ pythonVersion │           'Python 2.7.18'            │
+│      cc       │            '/usr/bin/cc'             │
+│     make      │           '/usr/bin/make'            │
+└───────────────┴──────────────────────────────────────┘
+Validating VS code preferences at: /Users/gerard/Library/Application Support/Code/User/settings.json
 ```

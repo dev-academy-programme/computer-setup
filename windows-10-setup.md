@@ -170,19 +170,25 @@ finally, this will set `zsh` as your default shell:
 chsh -s $(which zsh)
 ```
 
-If those all succeeded, you can restart your Ubuntu terminal, and you should be in `zsh`.
-
-run this command:
-
-```
-python --version
-```
+If those all succeeded, you can restart your Ubuntu terminal, and you should be in `zsh`
 
 If you get a page full of info about "This is the Z Shell configuration for new users...", press q (Quit and do nothing)
 
+Run this command to confirm `python` installed correctly
+
+```sh
+which python
+```
+
+Anything except "python not found" is okay here.
+
 ### 4.1 Installing oh-my-zsh
 
-oh-my-zsh is a package that
+We're going to install oh-my-zsh to make your terminal/shell experience a bit more pleasant.
+
+> Oh My Zsh is a delightful, open source, community-driven framework for
+> managing your Zsh configuration. It comes bundled with thousands of helpful
+> functions, helpers, plugins, themes, and a few things that make you shout...
 
 Enter this command into your Ubuntu terminal (note that it's one long line, even if it displays as two lines on the page where you're reading this):
 
@@ -272,7 +278,7 @@ nvm alias default node
 
 To confirm, run this command. We're expecting something in the `v16.x` range
 
-```
+```sh
 nvm current
 ```
 
@@ -294,7 +300,76 @@ processors=2 # Makes the WSL2 VM use two virtual processors
 
 Restart your PC
 
-## 6. You're all set up
+## 6. Cloning your first repo
+
+We're going to clone a repo into your ubuntu setup to make sure everything is working fine.
+
+We'll start by creating a directory to keep all your repos in
+
+```sh
+mkdir ~/devacademy
+```
+
+and then change directory into it:
+
+```sh
+cd ~/devacademy
+```
+
+If you prefer git to save your credentials instead of entering them each time, you can configure git to store them
+
+```sh
+git config --global credential.helper store
+```
+
+Now go to your [github tokens page](https://github.com/settings/tokens) and create a new token
+
+- It can be called anything, but I use something like "home laptop"
+- It needs the "repo" permissions so make sure to check that checkbox
+- Set the expiration to 90 days, so that it lasts all bootcamp
+- **make sure you copy the token before you close that tab**
+
+From your Ubuntu terminal, clone down `javascript-carnival`
+
+```sh
+git clone https://github.com/dev-academy-foundations/javascript-carnival
+```
+
+Because we are using `https`, github will ask for your username and password.
+
+- the username is your github username
+- the password is your github token, so paste it in with a right-click when prompted
+
+This should be the last time
+
+Now we're going change directory into the new directory:
+
+```sh
+cd javascript-carnival
+```
+
+and open Visual Studio Code
+
+```
+code .
+```
+
+Now you should be looking at the javascript-carnival exercise in your editor.
+
+> Running `code .` from the ubuntu terminal is the way we will open Visual
+> Studio Code during bootcamp. This ensures it opens in the Ubuntu context
+
+Run this command in your Ubuntu terminal:
+
+```sh
+Explorer.exe .
+```
+
+Windows explorer will open that directory.
+
+This is a quick and easy way to access your Linux files from windows if you ever need to.
+
+## 7. You're all set up
 
 Run this checklist to double-check everything:
 

@@ -144,14 +144,6 @@ Paste these contents inside the curly brackets:
 
 Note that each entry in your `settings.json` should end in a comma except for the last one, so if there are some existing entries you'll need to add a comma before pasting the above lines
 
-### 3.3 Make VS Code your default Git editor
-
-Run this command in your terminal:
-
-```sh
-git config --global core.editor "code --wait"
-```
-
 ## 4. Installing linux software
 
 To install most of the linux software you need, we'll run three commands.
@@ -337,6 +329,12 @@ If you prefer git to save your credentials instead of entering them each time, y
 
 ```sh
 git config --global credential.helper store
+```
+
+Run this command to make visual studio code your default editor for git commit messages
+
+```sh
+git config --global core.editor "code --wait"
 ```
 
 Now go to your [github tokens page](https://github.com/settings/tokens) and create a new token

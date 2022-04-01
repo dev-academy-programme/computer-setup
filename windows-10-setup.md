@@ -6,7 +6,6 @@ Pro-tip: There's a copy button hidden in the top-right of each code block for ea
 
 ![Screen Shot of clicking on the copy button](https://user-images.githubusercontent.com/47387/161153831-7a3ca544-0ad2-4977-aec8-92436f1a6bc5.png)
 
-
 During Bootcamp we'll be doing all our work inside a Windows Subsystem for Linux (WSL) environment, whereas during Foundations you were working directly within your Windows environment. This means you'll need to work through all the setup steps below, even if you've already been using node, VS Code, etc. in your Windows environment.
 
 ## 1. Installing WSL
@@ -203,7 +202,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 ### 4.2 Configuring ZSH
 
-Zsh uses a file in your home directory `~/.zshrc` to set your theme to "bira" run:
+Zsh installs a command `omz` to configure itself. To set your theme to "bira" run:
 
 ```sh
 omz theme set bira
@@ -286,6 +285,19 @@ To confirm, run this command. We're expecting something in the `v16.x` range
 ```sh
 nvm current
 ```
+
+### 4.6 Building sqlite3
+
+`sqlite3` is a database package that we use a lot during bootcamp. At this point
+you should be set up with everything you need to build it.
+
+Run this command to confirm:
+
+```sh
+npx --yes @donothing/can-u-build-sqlite3
+```
+
+If it succeeds it will log `Everything looks good`
 
 ## 5. Configure WSL
 

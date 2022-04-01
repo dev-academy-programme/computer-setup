@@ -208,6 +208,19 @@ To confirm, run this command. We're expecting something in the `v16.x` range
 nvm current
 ```
 
+### 4.6 Building sqlite3
+
+`sqlite3` is a database package that we use a lot during bootcamp. At this point
+you should be set up with everything you need to build it.
+
+Run this command to confirm:
+
+```sh
+npx --yes @donothing/can-u-build-sqlite3
+```
+
+If it succeeds it will log `Everything looks good`
+
 ## 6. Cloning your first repo
 
 We're going to clone a repo to make sure everything is working fine.
@@ -279,7 +292,7 @@ This is a quick and easy way to access your Linux files from windows if you ever
 Run this checklist to double-check everything:
 
 ```sh
-npx @donothing/checklist
+npx --yes @donothing/checklist
 ```
 
 You should see something like this (everything is in the "ok" column):

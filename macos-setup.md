@@ -283,9 +283,7 @@ Run this command in your terminal:
 open .
 ```
 
-Windows explorer will open that directory.
-
-This is a quick and easy way to access your Linux files from windows if you ever need to.
+Finder will open that directory
 
 ## 7. You're all set up
 

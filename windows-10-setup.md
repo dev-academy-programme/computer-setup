@@ -391,7 +391,7 @@ This is a quick and easy way to access your Linux files from windows if you ever
 Run this checklist to double-check everything:
 
 ```sh
-npx @donothing/checklist
+npx --yes @donothing/checklist
 ```
 
 You should see something like this (everything is in the "ok" column):

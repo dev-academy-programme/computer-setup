@@ -69,7 +69,7 @@ Once you have pasted it in, your Linux section should look like this (but instea
     "name": "Ubuntu-20.04",
     "source": "Windows.Terminal.Wsl",
     "colorScheme": "One Half Dark",
-    "startingDirectory": "\\\\wsl$\\Ubuntu-20.04\\home\\rohan"
+    "startingDirectory": "\\\\wsl$\\Ubuntu-20.04\\home\\maia"
 },
 ```
 Note that the `"source": "Windows.Terminal.Wsl",` line needs a comma at the end of it.

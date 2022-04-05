@@ -246,7 +246,7 @@ If it logs "node not found", that's perfect. We want NVM to manage node and npm 
 Enter this command into your terminal to download and install nvm:
 
 ```sh
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 ```
 
 This command will initialise NVM when you open a terminal

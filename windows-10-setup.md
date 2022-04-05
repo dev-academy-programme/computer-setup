@@ -57,7 +57,7 @@ Next, add these properties to the Ubuntu section (the same section you got the "
 
 ```json
 "colorScheme": "One Half Dark",
-"startingDirectory": "//wsl$/Ubuntu/home/[your_Linux_username]"
+"startingDirectory": "\\\\wsl$\\Ubuntu-20.04\\home\\[your_Linux_username]"
 ```
 
 Once you have pasted it in, your Linux section should look like this (but instead of `maia`, it would say YOUR username):

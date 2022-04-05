@@ -6,7 +6,7 @@ Pro-tip: There's a copy button hidden in the top-right of each code block for ea
 
 ![Screen Shot of clicking on the copy button](https://user-images.githubusercontent.com/47387/161153831-7a3ca544-0ad2-4977-aec8-92436f1a6bc5.png)
 
-During Bootcamp we'll be doing all our work inside a Windows Subsystem for Linux (WSL) environment, whereas during Foundations you were working directly within your Windows environment. This means you'll need to work through all the setup steps below, even if you've already been using node, VS Code, etc. in your Windows environment.
+We'll be doing all our work inside a Windows Subsystem for Linux (WSL) environment. This means you'll need to work through all the setup steps below, even if you've already been using node, VS Code, etc. in your Windows environment.
 
 ## 1. Installing WSL
 

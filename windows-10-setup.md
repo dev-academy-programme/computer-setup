@@ -72,6 +72,7 @@ Once you have pasted it in, your Linux section should look like this (but instea
     "startingDirectory": "//wsl$/Ubuntu/home/maia"
 },
 ```
+Note that the `"source": "Windows.Terminal.Wsl",` line needs a comma at the end of it.
 
 ## 3. Setup Visual Studio Code
 
@@ -86,6 +87,8 @@ code .
 ```
 
 (_don't_ open VS Code from the Start Menu, desktop link or any other way)
+
+If this is the first time you have installed VS Code you may need to close your terminal and open it again (Start menu : Windows Terminal) to reload the VS Code settings.
 
 ### 3.1 Installing extensions
 

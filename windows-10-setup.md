@@ -72,6 +72,7 @@ Once you have pasted it in, your Linux section should look like this (but instea
     "startingDirectory": "\\\\wsl$\\Ubuntu-20.04\\home\\maia"
 },
 ```
+
 Note that the `"source": "Windows.Terminal.Wsl",` line needs a comma at the end of it.
 
 ## 3. Setup Visual Studio Code
@@ -218,7 +219,7 @@ If your terminal is opening at a `/` (or `[user]@machineId /`) prompt instead of
 To make it open at home (`~`) instead. We're going to run this snippet to add a couple more lines to the bottom of your `~/.zshrc` file.
 
 ```sh
-cat << EOF >> ~/.zshrc
+cat << 'EOF' >> ~/.zshrc
 if [[ $(pwd) == / ]]; then
     cd ~
 fi
@@ -252,7 +253,7 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 This command will initialise NVM when you open a terminal
 
 ```sh
-cat << EOF >> ~/.zshrc
+cat << 'EOF' >> ~/.zshrc
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

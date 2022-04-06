@@ -143,7 +143,7 @@ how you installed it. Contact a facilitator if you get stuck
 Enter this command into your terminal to download and install nvm:
 
 ```sh
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash`
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 ```
 
 This command will initialise NVM when you open a terminal

@@ -260,6 +260,12 @@ export NVM_DIR="$HOME/.nvm"
 EOF
 ```
 
+Now run this command to reload your `~/.zshrc`
+
+```sh
+omz reload
+```
+
 ### 4.5 Installing Node and NPM with NVM
 
 Install the latest "Long Term Support" (i.e. very stable) version of node
@@ -396,26 +402,38 @@ Run this checklist to double-check everything:
 npx --yes @donothing/checklist
 ```
 
-You should see something like this (everything is in the "ok" column):
+You should see something like this (all ticks, no crosses, 0/x failed)
 
 ```
-┌───────────────┬──────────────────────────────────────┐
-│    (index)    │                  ok                  │
-├───────────────┼──────────────────────────────────────┤
-│     uname     │               'Darwin'               │
-│     shell     │              '/bin/zsh'              │
-│  zshVersion   │ 'zsh 5.8 (x86_64-apple-darwin21.0)'  │
-│    nvmDir     │     '/Users/gerard/.nvm exists'      │
-│   nvmConfig   │      'Config found in ~/.zshrc'      │
-│  nodeVersion  │              'v16.13.2'              │
-│  npmVersion   │               '8.5.0'                │
-│ VSCodeVersion │               '1.65.2'               │
-│  gitVersion   │ 'git version 2.32.0 (Apple Git-132)' │
-│   gitEditor   │            'code --wait'             │
-│  pythonPath   │          '/usr/bin/python'           │
-│ pythonVersion │           'Python 2.7.18'            │
-│      cc       │            '/usr/bin/cc'             │
-│     make      │           '/usr/bin/make'            │
-└───────────────┴──────────────────────────────────────┘
-Validating VS code preferences at: /Users/gerard/Library/Application Support/Code/User/settings.json
+Shell environment:
+
+ [ ✓ ] darwin
+ [ ✓ ] $SHELL = /bin/zsh
+ [ ✓ ] ZSH version = zsh 5.8 (x86_64-apple-darwin21.0)
+
+Node setup:
+
+ [ ✓ ] /Users/gerard/.nvm exists
+ [ ✓ ] NVM config found in ~/.zshrc
+ [ ✓ ] Node version = v16.13.2
+ [ ✓ ] NPM version = 8.5.0
+
+Visual studio code:
+
+ [ ✓ ] Visual Studio Code version = 1.65.2
+ [ ✓ ] Git editor is code --wait
+ [ ✓ ] VSCode extension 'dbaeumer.vscode-eslint' installed
+ [ ✓ ] VSCode extension 'esbenp.prettier-vscode' installed
+ [ ✓ ] VSCode extension 'ms-vsliveshare.vsliveshare' installed
+ [ ✓ ] VSCode extension 'eamodio.gitlens' installed
+ [ ✓ ] VSCode extension 'vscode-icons-team.vscode-icons' installed
+
+Build requirements (for node-gyp):
+
+ [ ✓ ] Git version = git version 2.32.0 (Apple Git-132)
+ [ ✓ ] Found cc = /usr/bin/cc
+ [ ✓ ] Found make = /usr/bin/make
+ [ ✓ ] Found python version: Python 3.8.9 at /usr/bin/python3
+
+RESULT: (0/21) checks failed
 ```

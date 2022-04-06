@@ -186,6 +186,12 @@ export NVM_DIR="$HOME/.nvm"
 EOF
 ```
 
+Now run this command to reload your `~/.zshrc`
+
+```sh
+omz reload
+```
+
 ### 4.5 Installing Node and NPM with NVM
 
 Install the latest "Long Term Support" (i.e. very stable) version of node

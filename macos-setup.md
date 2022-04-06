@@ -161,7 +161,15 @@ git config --global core.editor "code --wait"
 
 NVM is a tool to install and manage NodeJS versions.
 
-First, check if you have node installed
+First, check if you have installed nvm before
+
+```sh
+which nvm
+```
+
+If you see a lot of text then you've already installed NVM and can go to section 4.5, if you see a "not found" message then keep reading.
+
+Next, check if you have node installed
 
 ```sh
 which node

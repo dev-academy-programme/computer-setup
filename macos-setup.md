@@ -94,6 +94,8 @@ In your terminal, open VS Code with:
 code .
 ```
 
+If you see a 'command not found: code' error, try opening VS code by clicking on the Visual Studio Code program in your Applications folder and then open the command pallette (command + shift + p) and run `Shell Command: install 'code' command in PATH`.
+
 ### 3.1 Installing extensions
 
 Install the following VS Code extensions

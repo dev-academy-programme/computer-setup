@@ -1,6 +1,6 @@
 # MacOS Computer Setup for EDA
 
-If you are using the latest MacOS (Monterey) please note it is currently incompatible with Discord screen share when using the desktop app. Please use Discord in a Safari browser until a desktop app update & fix becomes available for screen sharing.
+If you are using the latest MacOS (Monterey) please note that you need to be running the latest version of the Discord desktop app for screen sharing to function. If you encounter problems, you can use Discord in a Safari browser.
 
 ---
 

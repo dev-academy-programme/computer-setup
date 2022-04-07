@@ -10,8 +10,6 @@ We'll be doing all our work inside a Windows Subsystem for Linux (WSL) environme
 
 ## 1. Installing WSL
 
-VIDEO WALKTHOUGH: https://www.youtube.com/watch?v=pwn4zknR5TU
-
 Go to the start Menu and type `Check for updates`. Make sure that your Windows
 has the most recent updates (Optional as well as Recommended ones, but you don't
 need to upgrade to Windows 11 if you don't want to).

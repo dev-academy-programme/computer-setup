@@ -55,7 +55,7 @@ Next, add these properties to the Ubuntu section (the same section you got the "
 
 ```json
 "colorScheme": "One Half Dark",
-"startingDirectory": "\\\\wsl$\\Ubuntu-20.04\\home\\[your_Linux_username]"
+"startingDirectory": "\\\\wsl$\\Ubuntu20.04LTS\\home\\[your_Linux_username]"
 ```
 
 Once you have pasted it in, your Linux section should look like this (but instead of `maia`, it would say YOUR username):
@@ -64,14 +64,16 @@ Once you have pasted it in, your Linux section should look like this (but instea
 {
     "guid": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
     "hidden": false,
-    "name": "Ubuntu-20.04",
+    "name": "Ubuntu20.04LTS",
     "source": "Windows.Terminal.Wsl",
     "colorScheme": "One Half Dark",
-    "startingDirectory": "\\\\wsl$\\Ubuntu-20.04\\home\\maia"
+    "startingDirectory": "\\\\wsl$\\Ubuntu20.04LTS\\home\\maia"
 },
 ```
 
 Note that the `"source": "Windows.Terminal.Wsl",` line needs a comma at the end of it.
+
+If you see a 'network name cannot be found' error when you load windows terminal double check that the "name" part of the json (ie "Ubuntu20.04LTS" in the above example) exatly matches the bit between `wsl$\\[exact-name-match-here]\\home` in the "startingDirectory" part.
 
 ## 3. Setup Visual Studio Code
 

@@ -335,6 +335,20 @@ and then change directory into it:
 cd ~/devacademy
 ```
 
+**For these next two commands, replace the name and email with your own details**
+
+You'll need to configure git to know your name...
+
+```sh
+git config --global user.name "Firstname Lastname"
+```
+
+... and your email address. These will be recorded as the author in commits you make
+
+```sh
+git config --global user.email "your.name@example.com"
+```
+
 If you prefer git to save your credentials instead of entering them each time, you can configure git to store them
 
 ```sh

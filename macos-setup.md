@@ -153,6 +153,8 @@ Paste these contents inside the curly brackets:
 
 Note that each entry in your `settings.json` should end in a comma except for the last one, so if there are some existing entries you'll need to add a comma before pasting the above lines
 
+See [Accessibility of code in VS Code or the terminal](code-accessibility.md) for suggestions on how you might customise your setup for readability.
+
 ### 3.3 Make VS Code your default Git editor
 
 Run this command in your terminal:
@@ -161,7 +163,9 @@ Run this command in your terminal:
 git config --global core.editor "code --wait"
 ```
 
-### 4.4 Install NVM
+## 4. Preparing to use Node
+
+### 4.1 Install NVM
 
 NVM is a tool to install and manage NodeJS versions.
 
@@ -206,7 +210,7 @@ Now run this command to reload your `~/.zshrc`
 omz reload
 ```
 
-### 4.5 Installing Node and NPM with NVM
+### 4.2 Installing Node and NPM with NVM
 
 Install the latest "Long Term Support" (i.e. very stable) version of node
 
@@ -228,7 +232,7 @@ To confirm, run this command. We're expecting something in the `v16.x` range
 nvm current
 ```
 
-### 4.6 Building sqlite3
+### 4.3 Building sqlite3
 
 `sqlite3` is a database package that we use a lot during bootcamp. At this point
 you should be set up with everything you need to build it.
@@ -241,7 +245,7 @@ npx --yes @donothing/can-u-build-sqlite3
 
 If it succeeds it will log `Everything looks good`
 
-## 6. Cloning your first repo
+## 5. Cloning your first repo
 
 We're going to clone a repo to make sure everything is working fine.
 
@@ -319,7 +323,7 @@ open .
 
 Finder will open that directory
 
-## 7. You're all set up
+## 6. You're all set up
 
 Run this checklist to double-check everything:
 

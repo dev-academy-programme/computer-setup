@@ -36,7 +36,7 @@ You may find that some minor adjustments to your coding setup can have a huge im
     in your settings.json for VS Code
 
 ## Resources
-These articles are primarily geared towards dyslexia, but may also be useful for people with attention-related impairments.
+These articles are primarily geared towards dyslexia, but include suggestions that may also be useful for people who are neurodivergent.
 * [Personalising VSCode for Dyslexia](https://jenn-hall.medium.com/personalising-vscode-for-dyslexia-60aac1a36b4d)
 * [Have Dyslexia? Make Coding Easier In Visual Studio Code](https://dev.to/deadlybyte/have-dyslexia-make-coding-easier-in-visual-studio-code-4kmg)
 * [Top tips for teaching people with dyslexia to code](https://blog.decoded.com/top-tips-for-teaching-people-with-dyslexia-to-code-ffc604668fe8)

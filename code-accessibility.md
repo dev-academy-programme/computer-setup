@@ -28,12 +28,7 @@ You may find that some minor adjustments to your coding setup can have a huge im
 - [Spellchecker for code](https://marketplace.visualstudio.com/items?itemName=streetsIDEsoftware.code-spell-checker)
 - [Code snippets](https://code.visualstudio.com/docs/editor/userdefinedsnippets)
 - Auto-completion & [auto-closing](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag) of tags
-- Visual pairing of brackets & closure highlighting
-  * ```
-    "editor.bracketPairColorization.enabled": true,
-    "editor.guides.bracketPairs": "active"
-    ```
-    in your settings.json for VS Code
+- [Closure highlighting](https://marketplace.visualstudio.com/items?itemName=Durzn.brackethighlighter)
 
 ## Resources
 These articles are primarily geared towards dyslexia, but include suggestions that may also be useful for people who are neurodivergent.

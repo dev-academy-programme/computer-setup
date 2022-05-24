@@ -2,6 +2,8 @@
 
 You may find that some minor adjustments to your coding setup can have a huge impact on the effectiveness and enjoyability of your experience. Here are a few things you might try customising to suit your own needs. While they are largely sourced from resources focusing on dyslexia, anyone can benefit from them.
 
+Further accessibility features, such as keyboard navigation, screenreader compatibility, and audio cues are described in the [VS Code docs](https://code.visualstudio.com/docs/editor/accessibility).
+
 Additionally, if you need hands-free coding, read [Josh W. Comeau's description of how he does this](https://www.joshwcomeau.com/blog/hands-free-coding/).
 
 ## Customisations that might improve readability:

@@ -2,6 +2,8 @@
 
 You may find that some minor adjustments to your coding setup can have a huge impact on the effectiveness and enjoyability of your experience. Here are a few things you might try customising to suit your own needs. While they are largely sourced from resources focusing on dyslexia, anyone can benefit from them.
 
+Additionally, if you need hands-free coding, read [Josh W. Comeau's description of how he does this](https://www.joshwcomeau.com/blog/hands-free-coding/).
+
 ## Customisations that might improve readability:
 - Colours (themes and contrast)
   * [This one](https://github.com/SpeedyLom/dislexic-vscode) was designed by a dyslexic coder for their own use

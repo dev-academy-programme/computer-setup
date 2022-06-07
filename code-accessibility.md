@@ -12,7 +12,7 @@ Additionally, if you need hands-free coding, read [Josh W. Comeau's description 
 - Typefaces
   * [This one](https://www.opendyslexic.org/) was specifically designed for dyslexic readers and comes in a "monospace" font, which is what is typically used in code editors
 - Font size, letter spacing, line spacing [(general guidance)](https://www.bdadyslexia.org.uk/advice/employers/creating-a-dyslexia-friendly-workplace/dyslexia-friendly-style-guide)
-  * The editor is highly customisable within VS Code, and so is the integrated terminal. For example, using `"terminal.integrated.fontSize": 16` in your settings.json for VS Code
+  * The editor is highly customisable within VS Code, and so is the integrated terminal. For example, using `"terminal.integrated.fontSize": 16` in your settings.json for VS Code. The markdown preview can also be customized with `"markdown.preview.lineHeight"`, `"markdown.preview.fontSize"`, and `"markdown.preview.fontFamily"`.
 - Magnification of entire interfaces (i.e. zooming in/out)
   * `"window.zoomLevel": 1.5` (or whatever value you choose) in your settings.json for VS Code
 - [Icons for different file types](https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons)

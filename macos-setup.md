@@ -288,7 +288,7 @@ Now go to your [github tokens page](https://github.com/settings/tokens) and crea
 - Set the expiration to 90 days, so that it lasts all bootcamp
 - **make sure you copy the token before you close that tab**
 
-From your Ubuntu terminal, clone down `javascript-carnival`
+From your terminal, clone down `javascript-carnival`
 
 ```sh
 git clone https://github.com/dev-academy-foundations/javascript-carnival

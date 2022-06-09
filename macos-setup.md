@@ -126,11 +126,11 @@ eamodio.gitlens
 
 In VS Code:
 
-1. click the Settings cog button in the bottom left and open the Command Palette.
-2. Type `settings.json` into the little search box that appears at the top of your scree
-3. click on the `Preferences: Open Settings (JSON)` option to open your `settings.json` config file.
+1. Click the Settings cog button in the bottom left and open the Command Palette.
+2. Type `settings.json` into the little search box that appears at the top of your screen.
+3. Click on the `Preferences: Open Settings (JSON)` option to open your `settings.json` config file.
 
-Paste these contents inside the curly brackets:
+4. Paste these contents inside the curly brackets:
 
 ```json
  "editor.detectIndentation": false,
@@ -151,7 +151,9 @@ Paste these contents inside the curly brackets:
  "prettier.singleQuote": true
 ```
 
-Note that each entry in your `settings.json` should end in a comma except for the last one, so if there are some existing entries you'll need to add a comma before pasting the above lines
+5. Save your `settings.json` file.
+
+Note that each entry in your `settings.json` should end in a comma except for the last one, so if there are some existing entries you'll need to add a comma before pasting the above lines.
 
 See [Accessibility of code in VS Code or the terminal](code-accessibility.md) for suggestions on how you might customise your setup for readability.
 

@@ -126,11 +126,11 @@ eamodio.gitlens
 
 In VS Code:
 
-1. click the Settings cog button in the bottom left and open the Command Palette.
-2. Type `settings.json` into the little search box that appears at the top of your scree
-3. click on the `Preferences: Open Settings (JSON)` option to open your `settings.json` config file.
+1. Click the Settings cog button in the bottom left and open the Command Palette.
+2. Type `settings.json` into the little search box that appears at the top of your screen.
+3. Click on the `Preferences: Open Settings (JSON)` option to open your `settings.json` config file.
 
-Paste these contents inside the curly brackets:
+4. Paste these contents inside the curly brackets:
 
 ```json
  "editor.detectIndentation": false,
@@ -143,11 +143,19 @@ Paste these contents inside the curly brackets:
    "editor.formatOnSave": true,
    "editor.defaultFormatter": "esbenp.prettier-vscode"
  },
+ "[javascriptreact]": {
+   "editor.formatOnSave": true,
+   "editor.defaultFormatter": "esbenp.prettier-vscode"
+ },
  "prettier.semi": false,
  "prettier.singleQuote": true
 ```
 
-Note that each entry in your `settings.json` should end in a comma except for the last one, so if there are some existing entries you'll need to add a comma before pasting the above lines
+5. Save your `settings.json` file.
+
+Note that each entry in your `settings.json` should end in a comma except for the last one, so if there are some existing entries you'll need to add a comma before pasting the above lines.
+
+See [Accessibility of code in VS Code or the terminal](code-accessibility.md) for suggestions on how you might customise your setup for readability.
 
 ### 3.3 Make VS Code your default Git editor
 
@@ -157,7 +165,9 @@ Run this command in your terminal:
 git config --global core.editor "code --wait"
 ```
 
-### 4.4 Install NVM
+## 4. Preparing to use Node
+
+### 4.1 Install NVM
 
 NVM is a tool to install and manage NodeJS versions.
 
@@ -202,7 +212,7 @@ Now run this command to reload your `~/.zshrc`
 omz reload
 ```
 
-### 4.5 Installing Node and NPM with NVM
+### 4.2 Installing Node and NPM with NVM
 
 Install the latest "Long Term Support" (i.e. very stable) version of node
 
@@ -224,7 +234,7 @@ To confirm, run this command. We're expecting something in the `v16.x` range
 nvm current
 ```
 
-### 4.6 Building sqlite3
+### 4.3 Building sqlite3
 
 `sqlite3` is a database package that we use a lot during bootcamp. At this point
 you should be set up with everything you need to build it.
@@ -237,7 +247,7 @@ npx --yes @donothing/can-u-build-sqlite3
 
 If it succeeds it will log `Everything looks good`
 
-## 6. Cloning your first repo
+## 5. Cloning your first repo
 
 We're going to clone a repo to make sure everything is working fine.
 
@@ -280,12 +290,11 @@ Now go to your [github tokens page](https://github.com/settings/tokens) and crea
 - Set the expiration to 90 days, so that it lasts all bootcamp
 - **make sure you copy the token before you close that tab**
 
-From your Ubuntu terminal, clone down `javascript-carnival`
+From your terminal, clone down `clone-a-repo-test`
 
 ```sh
-git clone https://github.com/dev-academy-foundations/javascript-carnival
+git clone https://github.com/dev-academy-foundations/clone-a-repo-test.git
 ```
-
 Because we are using `https`, github will ask for your username and password.
 
 - the username is your github username
@@ -296,7 +305,7 @@ This should be the last time
 Now we're going change directory into the new directory:
 
 ```sh
-cd javascript-carnival
+cd clone-a-repo-test
 ```
 
 and open Visual Studio Code
@@ -305,7 +314,7 @@ and open Visual Studio Code
 code .
 ```
 
-Now you should be looking at the javascript-carnival exercise in your editor.
+Now you should be looking at the clone-a-repo-test in your editor. Click on the README.md file to read the hidden message.
 
 Run this command in your terminal:
 
@@ -315,7 +324,7 @@ open .
 
 Finder will open that directory
 
-## 7. You're all set up
+## 6. You're all set up
 
 Run this checklist to double-check everything:
 

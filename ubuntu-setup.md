@@ -111,6 +111,10 @@ Paste these contents inside the curly brackets:
    "editor.formatOnSave": true,
    "editor.defaultFormatter": "esbenp.prettier-vscode"
  },
+ "[javascriptreact]": {
+   "editor.formatOnSave": true,
+   "editor.defaultFormatter": "esbenp.prettier-vscode"
+ },
  "prettier.semi": false,
  "prettier.singleQuote": true
 ```
@@ -248,10 +252,10 @@ Now go to your [github tokens page](https://github.com/settings/tokens) and crea
 - Set the expiration to 90 days, so that it lasts all bootcamp
 - **make sure you copy the token before you close that tab**
 
-From your Ubuntu terminal, clone down `javascript-carnival`
+From your Ubuntu terminal, clone down `clone-a-repo-test`
 
 ```sh
-git clone https://github.com/dev-academy-foundations/javascript-carnival
+git clone https://github.com/dev-academy-foundations/clone-a-repo-test.git
 ```
 
 Because we are using `https`, github will ask for your username and password.
@@ -264,7 +268,7 @@ This should be the last time
 Now we're going change directory into the new directory:
 
 ```sh
-cd javascript-carnival
+cd clone-a-repo-test
 ```
 
 and open Visual Studio Code
@@ -273,7 +277,7 @@ and open Visual Studio Code
 code .
 ```
 
-Now you should be looking at the javascript-carnival exercise in your editor.
+Now you should be looking at the clone-a-repo-test in your editor. Click on the `README.md` file to read the hidden message.
 
 Run this command in your terminal:
 

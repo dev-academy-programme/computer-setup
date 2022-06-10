@@ -375,7 +375,7 @@ Now go to your [github tokens page](https://github.com/settings/tokens) and crea
 From your Ubuntu terminal, clone down `clone-a-repo-test`
 
 ```sh
-git clone https://github.com/dev-academy-foundations/clone-a-repo-test
+git clone https://github.com/dev-academy-foundations/clone-a-repo-test.git
 ```
 
 Because we are using `https`, github will ask for your username and password.

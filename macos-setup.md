@@ -164,10 +164,10 @@ NVM is a tool to install and manage NodeJS versions.
 First, check if you have installed nvm before
 
 ```sh
-which nvm
+type nvm
 ```
 
-If you see a lot of text then you've already installed NVM and can go to section 4.5, if you see a "not found" message then keep reading.
+If you see something like `nvm is a shell function from /home/username/.nvm/nvm.sh` you've already installed NVM and can go to section 4.5, if you see a `nvm not found` message then keep reading.
 
 Next, check if you have node installed
 

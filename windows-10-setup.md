@@ -234,6 +234,14 @@ You should now be at the home directory `~`.
 
 NVM is a tool to install and manage NodeJS versions.
 
+First, check if you have installed nvm before
+
+```sh
+type nvm
+```
+
+If you see something like `nvm is a shell function from /home/username/.nvm/nvm.sh` you've already installed NVM and can go to section 4.5, if you see a `nvm not found` message then keep reading.
+
 First, check if you have node installed
 
 ```sh

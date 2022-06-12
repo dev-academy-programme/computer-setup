@@ -318,7 +318,7 @@ Install the latest "Long Term Support" (i.e. very stable) version of node
 </details>
     
 <details>    
-<summary><b>7. Building sqlite3</b><summary>
+<summary><b>7. Building sqlite3</b></summary>
 
 `sqlite3` is a database package that we use a lot during bootcamp. At this point
 you should be set up with everything you need to build it.
@@ -335,7 +335,7 @@ you should be set up with everything you need to build it.
 </details>   
      
 <details>     
-<summary><b>8. Configure WSL</b><summary>
+<summary><b>8. Configure WSL</b></summary>
 
 8.1. Limit your WSL virtual machine so that it can't consume too much RAM
 

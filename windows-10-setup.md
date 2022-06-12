@@ -243,9 +243,9 @@ To install most of the linux software you need, we'll run three commands.
      Restart your terminal.
 
      You should now be at the home directory `~`.
-
-
-<details>    
+</details>    
+     
+<details>      
 <summary><b>5. Install NVM</b></summary>
 
 NVM is a tool to install and manage NodeJS versions.
@@ -332,7 +332,9 @@ you should be set up with everything you need to build it.
         If it succeeds it will log `Everything looks good`
         </details>
 
-<details>    
+</details>   
+     
+<details>     
 <summary><b>8. Configure WSL</b><summary>
 
 8.1. Limit your WSL virtual machine so that it can't consume too much RAM

@@ -15,21 +15,21 @@ We'll be doing all our work inside a Windows Subsystem for Linux (WSL) environme
      has the most recent updates (Optional as well as Recommended ones, but you don't
      need to upgrade to Windows 11 if you don't want to).
 
-      - Press the Windows key and type `winver` and press Enter
-      - Confirm that your Windows is version 2004 and higher (Build 19041 and higher) or any Windows 11 version
-      - If your Windows version is less than Build 19041, let one of the facilitators know
+- Press the Windows key and type `winver` and press Enter
+- Confirm that your Windows is version 2004 and higher (Build 19041 and higher) or any Windows 11 version
+- If your Windows version is less than Build 19041, let one of the facilitators know
 
 1.2. Go to the Start Menu and open Windows Powershell as an Administrator
 
-      - Put this command in Powershell `wsl --install` and hit enter
-      - Restart your computer
+- Put this command in Powershell `wsl --install` and hit enter
+- Restart your computer
 
 1.3. Open Ubuntu from the Start Menu and let it finish installation:
 
-      - When prompted, enter a username (e.g. your first name) and a password - this is the username that Linux will run as by default
-      - **IMPORTANT:** When you type in your password, you will notice nothing happens, this is a feature in Linux for security purposes.
-      - For Full Name, Room Number, etc. you can hit Enter to leave them blank
-      - If it says installing for more than 5 minutes, close the Ubuntu window and re-open it
+- When prompted, enter a username (e.g. your first name) and a password - this is the username that Linux will run as by default
+- **IMPORTANT:** When you type in your password, you will notice nothing happens, this is a feature in Linux for security purposes.
+- For Full Name, Room Number, etc. you can hit Enter to leave them blank
+- If it says installing for more than 5 minutes, close the Ubuntu window and re-open it
 </details>    
 
 <details>

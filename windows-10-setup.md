@@ -8,6 +8,8 @@ Pro-tip: There's a copy button hidden in the top-right of each code block for ea
 
 We'll be doing all our work inside a Windows Subsystem for Linux (WSL) environment. This means you'll need to work through all the setup steps below, even if you've already been using node, VS Code, etc. in your Windows environment.
 
+There is also a video walkthrough of the setup [here](https://youtu.be/vMOvoB20flI) that you can refer to if you get stuck on any of the steps outlined below. 
+
 <details>
 <summary><b>1. Installing WSL</b></summary>
 <br/>

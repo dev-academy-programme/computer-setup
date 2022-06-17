@@ -295,12 +295,6 @@ From your terminal, clone down `clone-a-repo-test`
 ```sh
 git clone https://github.com/dev-academy-foundations/clone-a-repo-test.git
 ```
-Because we are using `https`, github will ask for your username and password.
-
-- the username is your github username
-- the password is your github token, so paste it in with a right-click when prompted
-
-This should be the last time
 
 Now we're going change directory into the new directory:
 

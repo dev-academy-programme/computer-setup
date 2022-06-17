@@ -412,14 +412,7 @@ git config --global core.editor "code --wait"
 git clone https://github.com/dev-academy-foundations/clone-a-repo-test.git
 ```
 
-9.8. Because we are using `https`, github will ask for your username and password.
-
-- the username is your github username
-- the password is your github token, so paste it in with a right-click when prompted
-
-This should be the last time
-
-9.9. Now we're going change directory into the new directory:
+9.8. Now we're going change directory into the new directory:
 
 ```sh
 cd clone-a-repo-test
@@ -431,7 +424,7 @@ and open Visual Studio Code
 code .
 ```
 
-9.10. Now you should be looking at the clone-a-repo-test in your editor. Click on the `README.md` file to read the hidden message.
+9.9. Now you should be looking at the clone-a-repo-test in your editor. Click on the `README.md` file to read the hidden message.
 
 > Running `code .` from the ubuntu terminal is the way we will open Visual
 > Studio Code during this course. This ensures it opens in the Ubuntu context

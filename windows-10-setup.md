@@ -127,6 +127,8 @@ vscode-icons-team.vscode-icons
 eamodio.gitlens
 ```
 
+*For some people, mysteriously, those IDs will not print out. This is okay and everything will be fine, you can move on. 
+     
 If you have installed these previously in Windows, you may have to reinstall them for
 WSL.
 

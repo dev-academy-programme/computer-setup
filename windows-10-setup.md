@@ -149,6 +149,7 @@ Paste these contents inside the curly brackets:
      "editor.codeActionsOnSave": { "source.fixAll.eslint": true },
      "editor.bracketPairColorization.enabled": true,
      "editor.guides.bracketPairs":"active",
+     "javascript.suggest.autoImports": false,
      "[javascript]": {
        "editor.formatOnSave": true,
        "editor.defaultFormatter": "esbenp.prettier-vscode"

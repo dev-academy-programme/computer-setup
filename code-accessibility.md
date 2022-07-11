@@ -9,6 +9,7 @@ Additionally, if you need hands-free coding, read [Josh W. Comeau's description 
 ## Customisations that might improve readability:
 - Colours (themes and contrast)
   * [This one](https://github.com/SpeedyLom/dislexic-vscode) was designed by a dyslexic coder for their own use
+  * For fine-grained control, you can modify the colours of specific "tokens" such as numbers or words like "const" and "return". [Here's an article](https://medium.com/@danromans/how-to-customize-semantic-token-colorization-with-visual-studio-code-ac3eab96141b) on how to do this
 - Typefaces
   * [This one](https://www.opendyslexic.org/) was specifically designed for dyslexic readers and comes in a "monospace" font, which is what is typically used in code editors
 - Font size, letter spacing, line spacing [(general guidance)](https://www.bdadyslexia.org.uk/advice/employers/creating-a-dyslexia-friendly-workplace/dyslexia-friendly-style-guide)
@@ -24,6 +25,7 @@ Additionally, if you need hands-free coding, read [Josh W. Comeau's description 
     in your settings.json for VS Code
 
 ## Customisations that might benefit focus and attention:
+- Find "TODO" items in your code and build a list in the sidebar with [Todo Tree](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree)
 - Hiding the minimap
   * `"editor.minimap.enabled": false` in your settings.json for VS Code
 - Colours to highlight (or de-emphasise) certain panels, applications, or work spaces

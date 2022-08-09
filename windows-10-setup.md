@@ -108,6 +108,7 @@ Install the following VS Code extensions
 - Prettier
 - Remote - WSL
 - Live Share
+- Handlebars (the one by André Junges)
 - vscode-icons (optional, but pretty :wink:)
 - GitLens (optional)
 

@@ -449,7 +449,7 @@ This is a quick and easy way to access your Linux files from windows if you ever
 10.1 Run this checklist to double-check everything:
 
 ```sh
-npx --yes @donothing/checklist
+npx --yes @devacademy/checklist
 ```
 
 You should see something like this (all ticks, no crosses, 0/x failed)

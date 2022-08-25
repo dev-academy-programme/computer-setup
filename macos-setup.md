@@ -323,7 +323,7 @@ Finder will open that directory
 Run this checklist to double-check everything:
 
 ```sh
-npx --yes @donothing/checklist
+npx --yes @devacademy/checklist
 ```
 
 You should see something like this (all ticks, no crosses, 0/x failed)

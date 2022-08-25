@@ -1,18 +1,18 @@
 # Ubuntu Computer Setup for EDA
 
-Pro-tip: There's a copy button hidden in the top-right of each code block for easy copy/pasting.
+**Pro-tip:** There's a copy button hidden in the top-right of each code block for easy copy/pasting.
 
 ![Screen Shot of clicking on the copy button](https://user-images.githubusercontent.com/47387/161153831-7a3ca544-0ad2-4977-aec8-92436f1a6bc5.png)
 
 ## 1. Installing the essentials
 
-First run this in your terminal to update your sources
+First run this in your terminal to update your sources:
 
 ```sh
 sudo apt-get update
 ```
 
-Then run this to install the packages we need
+Then run this to install the packages we need:
 
 ```sh
 sudo apt-get install build-essential python-is-python3 zsh
@@ -28,13 +28,13 @@ Close and open a new terminal and if you are prompted to make a choice, choose `
 
 ### 1.1 Installing oh-my-zsh
 
-We're going to install oh-my-zsh to make your terminal/shell experience a bit more pleasant.
+We're going to install `oh-my-zsh` to make your terminal/shell experience a bit more pleasant.
 
-> Oh My Zsh is a delightful, open source, community-driven framework for
+> _Oh My Zsh_ is a delightful, open source, community-driven framework for
 > managing your Zsh configuration. It comes bundled with thousands of helpful
 > functions, helpers, plugins, themes, and a few things that make you shout...
 
-Copy this command into your terminal
+Copy this command into your terminal:
 
 ```sh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -54,11 +54,11 @@ Close your terminal and open a new one.
 
 ## 3. Setup Visual Studio Code
 
-Install Visual Studio Code if it isn't already installed
+Install _Visual Studio Code_ if it isn't already installed.
 
 https://code.visualstudio.com/download
 
-In your terminal, open VS Code with:
+Then in your terminal, open _VS Code_ with:
 
 ```
 code .
@@ -66,7 +66,7 @@ code .
 
 ### 3.1 Installing extensions
 
-Install the following VS Code extensions
+Install the following _VS Code_ extensions:
 
 - ESLint
 - Prettier
@@ -92,13 +92,13 @@ eamodio.gitlens
 
 ### 3.2 Visual Studio Code settings
 
-In VS Code:
+In _VS Code_:
 
-1. click the Settings cog button in the bottom left and open the Command Palette.
-2. Type `settings.json` into the little search box that appears at the top of your scree
-3. click on the `Preferences: Open Settings (JSON)` option to open your `settings.json` config file.
+1. Click the _Settings_ cog button in the bottom left and open the _Command Palette_.
+2. Type `settings.json` into the little search box that appears at the top of your screen.
+3. Click on the `Preferences: Open User Settings (JSON)` option to open your `settings.json` config file.
 
-Paste these contents inside the curly brackets:
+Paste this content after the first line (`{`):
 
 ```json
  "editor.detectIndentation": false,
@@ -119,7 +119,7 @@ Paste these contents inside the curly brackets:
  "prettier.singleQuote": true
 ```
 
-Note that each entry in your `settings.json` should end in a comma except for the last one, so if there are some existing entries you'll need to add a comma before pasting the above lines
+**NOTE:** Each entry in your `settings.json` should end in a comma, except for the last one. If there are some existing entries you'll need to add a comma to the end of this line: `"prettier.singleQuote": true`.
 
 ### 3.3 Make VS Code your default Git editor
 
@@ -133,7 +133,7 @@ git config --global core.editor "code --wait"
 
 NVM is a tool to install and manage NodeJS versions.
 
-First, check if you have installed nvm before
+First, check if you have installed NVM before:
 
 ```sh
 type nvm
@@ -141,7 +141,7 @@ type nvm
 
 If you see something like `nvm is a shell function from /home/username/.nvm/nvm.sh` you've already installed NVM and can go to section 4.5, if you see a `nvm not found` message then keep reading.
 
-First, check if you have node installed
+First, check if you have NodeJS installed:
 
 ```sh
 which node
@@ -149,16 +149,16 @@ which node
 
 If it logs "node not found", that's perfect. We want NVM to manage node and npm on our dev machine.
 
-If it logs anything else e.g. `/usr/bin/node`, you need to uninstall node, this differs depending on
-how you installed it. Contact a facilitator if you get stuck
+If it logs anything else (e.g. `/usr/bin/node`), you need to uninstall NodeJS, this differs depending on
+how you installed it. Contact a facilitator if you get stuck.
 
-Enter this command into your terminal to download and install nvm:
+Enter this command into your terminal to download and install NVM:
 
 ```sh
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 ```
 
-This command will initialise NVM when you open a terminal
+This command will initialise NVM when you open a terminal:
 
 ```sh
 cat << 'EOF' >> ~/.zshrc
@@ -168,7 +168,7 @@ export NVM_DIR="$HOME/.nvm"
 EOF
 ```
 
-Now run this command to reload your `~/.zshrc`
+Now run this command to reload your `~/.zshrc`:
 
 ```sh
 omz reload
@@ -176,7 +176,7 @@ omz reload
 
 ### 4.5 Installing Node and NPM with NVM
 
-Install the latest "Long Term Support" (i.e. very stable) version of node
+Install the latest "Long Term Support" (i.e. very stable) version of node:
 
 Run this command in your terminal:
 
@@ -190,7 +190,7 @@ Then, also in your terminal, run:
 nvm alias default node
 ```
 
-To confirm, run this command. We're expecting something in the `v16.x` range
+To confirm, run this command (_We're expecting something in the `v16.x` range_):
 
 ```sh
 nvm current
@@ -207,13 +207,13 @@ Run this command to confirm:
 npx --yes @donothing/can-u-build-sqlite3
 ```
 
-If it succeeds it will log `Everything looks good`
+If it succeeds it will log `Everything looks good`.
 
 ## 6. Cloning your first repo
 
 We're going to clone a repo to make sure everything is working fine.
 
-We'll start by creating a directory to keep all your repos in (it doesn't really matter what you call it)
+We'll start by creating a directory to keep all your repos in (_it doesn't really matter what you call it_):
 
 ```sh
 mkdir ~/devacademy
@@ -227,50 +227,50 @@ cd ~/devacademy
 
 **For these next two commands, replace the name and email with your own details**
 
-You'll need to configure git to know your name...
+You'll need to configure `git` to know your name...
 
 ```sh
 git config --global user.name "Firstname Lastname"
 ```
 
-... and your email address. These will be recorded as the author in commits you make
+... and your email address. These will be recorded as the author in commits you make:
 
 ```sh
 git config --global user.email "your.name@example.com"
 ```
 
-If you prefer git to save your credentials instead of entering them each time, you can configure git to store them
+If you prefer `git` to save your credentials instead of entering them each time, you can configure `git` to store them:
 
 ```sh
 git config --global credential.helper store
 ```
 
-Now go to your [github tokens page](https://github.com/settings/tokens) and create a new token
+Now go to your [github tokens page](https://github.com/settings/tokens) and create a new token:
 
 - It can be called anything, but I use something like "home laptop"
 - It needs the "repo" permissions so make sure to check that checkbox
 - Set the expiration to 90 days, so that it lasts all bootcamp
-- **make sure you copy the token before you close that tab**
+- **Make sure you copy the token before you close that tab**
 
-From your Ubuntu terminal, clone down `clone-a-repo-test`
+From your Ubuntu terminal, clone down `clone-a-repo-test`:
 
 ```sh
 git clone https://github.com/dev-academy-foundations/clone-a-repo-test.git
 ```
 
-Now we're going change directory into the new directory:
+Now we're going to change into the new directory:
 
 ```sh
 cd clone-a-repo-test
 ```
 
-and open Visual Studio Code
+and open _Visual Studio Code_:
 
 ```
 code .
 ```
 
-Now you should be looking at the clone-a-repo-test in your editor. Click on the `README.md` file to read the hidden message.
+Now you should be looking at the `clone-a-repo-test` in your editor. Click on the `README.md` file to read the hidden message.
 
 Run this command in your terminal:
 
@@ -278,7 +278,7 @@ Run this command in your terminal:
 open .
 ```
 
-Finder will open that directory
+Your file browser should open that directory.
 
 ## 7. You're all set up
 
@@ -288,25 +288,25 @@ Run this checklist to double-check everything:
 npx --yes @donothing/checklist
 ```
 
-You should see something like this (all ticks, no crosses, 0/x failed)
+You should see something like this (_all ticks, no crosses, 0/x failed_):
 
 ```
 Shell environment:
 
- [ ✓ ] darwin
+ [ ✓ ] linux
  [ ✓ ] $SHELL = /bin/zsh
- [ ✓ ] ZSH version = zsh 5.8 (x86_64-apple-darwin21.0)
+ [ ✓ ] ZSH version = zsh 5.9
 
 Node setup:
 
  [ ✓ ] /Users/gerard/.nvm exists
  [ ✓ ] NVM config found in ~/.zshrc
- [ ✓ ] Node version = v16.13.2
- [ ✓ ] NPM version = 8.5.0
+ [ ✓ ] Node version = v16.17.0
+ [ ✓ ] NPM version = 8.15.0
 
 Visual studio code:
 
- [ ✓ ] Visual Studio Code version = 1.65.2
+ [ ✓ ] Visual Studio Code version = 1.70.2
  [ ✓ ] Git editor is code --wait
  [ ✓ ] VSCode extension 'dbaeumer.vscode-eslint' installed
  [ ✓ ] VSCode extension 'esbenp.prettier-vscode' installed
@@ -316,10 +316,10 @@ Visual studio code:
 
 Build requirements (for node-gyp):
 
- [ ✓ ] Git version = git version 2.32.0 (Apple Git-132)
+ [ ✓ ] Git version = git version 2.37.2
  [ ✓ ] Found cc = /usr/bin/cc
  [ ✓ ] Found make = /usr/bin/make
- [ ✓ ] Found python version: Python 3.8.9 at /usr/bin/python3
+ [ ✓ ] Found python version: Python 3.10.4 at /usr/bin/python3
 
 RESULT: (0/21) checks failed
 ```

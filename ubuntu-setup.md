@@ -107,6 +107,7 @@ Paste this content after the first line (`{`):
  "editor.codeActionsOnSave": { "source.fixAll.eslint": true },
  "editor.bracketPairColorization.enabled": true,
  "editor.guides.bracketPairs":"active",
+ "workbench.editor.labelFormat": "short",
  "[javascript]": {
    "editor.formatOnSave": true,
    "editor.defaultFormatter": "esbenp.prettier-vscode"

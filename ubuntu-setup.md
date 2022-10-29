@@ -301,8 +301,8 @@ Node setup:
 
  [ ✓ ] /Users/gerard/.nvm exists
  [ ✓ ] NVM config found in ~/.zshrc
- [ ✓ ] Node version = v16.17.0
- [ ✓ ] NPM version = 8.15.0
+ [ ✓ ] Node version = v16.12.0
+ [ ✓ ] NPM version = 8.19.2
 
 Visual studio code:
 

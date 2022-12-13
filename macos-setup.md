@@ -133,23 +133,33 @@ In VS Code:
 4. Paste these contents inside the curly brackets:
 
 ```json
- "editor.detectIndentation": false,
- "editor.insertSpaces": true,
- "editor.tabSize": 2,
- "editor.codeActionsOnSave": { "source.fixAll.eslint": true },
- "editor.bracketPairColorization.enabled": true,
- "editor.guides.bracketPairs":"active",
- "[javascript]": {
-   "editor.formatOnSave": true,
-   "editor.defaultFormatter": "esbenp.prettier-vscode"
- },
- "[javascriptreact]": {
-   "editor.formatOnSave": true,
-   "editor.defaultFormatter": "esbenp.prettier-vscode"
- },
- "prettier.semi": false,
- "prettier.singleQuote": true
+  "editor.detectIndentation": false,
+  "editor.insertSpaces": true,
+  "editor.tabSize": 2,
+  "editor.codeActionsOnSave": { "source.fixAll.eslint": true },
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs":"active",
+  "[javascript]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "prettier.semi": false,
+  "prettier.singleQuote": true
 ```
+
+**NOTE:** Each entry in your `settings.json` should end in a comma, except for the last one. If there are some existing entries you'll need to add a comma to the end of this line: `"prettier.singleQuote": true`.
 
 5. Save your `settings.json` file.
 
@@ -228,7 +238,7 @@ Then, also in your terminal, run:
 nvm alias default node
 ```
 
-To confirm, run this command. We're expecting something in the `v16.x` range
+To confirm, run this command. We're expecting something in the `v18.x` range
 
 ```sh
 nvm current
@@ -326,7 +336,7 @@ Run this checklist to double-check everything:
 npx --yes @devacademy/checklist
 ```
 
-You should see something like this (all ticks, no crosses, 0/x failed)
+You should see something like this (_all ticks, no crosses, 0/x failed_):
 
 ```
 Shell environment:
@@ -339,12 +349,12 @@ Node setup:
 
  [ ✓ ] /Users/gerard/.nvm exists
  [ ✓ ] NVM config found in ~/.zshrc
- [ ✓ ] Node version = v16.12.0
- [ ✓ ] NPM version = 8.19.2
+ [ ✓ ] Node version = v18.12.1
+ [ ✓ ] NPM version = 9.2.0
 
 Visual studio code:
 
- [ ✓ ] Visual Studio Code version = 1.65.2
+ [ ✓ ] Visual Studio Code version = 1.74.0
  [ ✓ ] Git editor is code --wait
  [ ✓ ] VSCode extension 'dbaeumer.vscode-eslint' installed
  [ ✓ ] VSCode extension 'esbenp.prettier-vscode' installed

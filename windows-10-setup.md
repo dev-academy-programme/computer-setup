@@ -144,25 +144,33 @@ In VS Code:
 Paste these contents inside the curly brackets:
 
 ```json
-     "editor.detectIndentation": false,
-     "editor.insertSpaces": true,
-     "editor.tabSize": 2,
-     "editor.codeActionsOnSave": { "source.fixAll.eslint": true },
-     "editor.bracketPairColorization.enabled": true,
-     "editor.guides.bracketPairs":"active",
-     "[javascript]": {
-       "editor.formatOnSave": true,
-       "editor.defaultFormatter": "esbenp.prettier-vscode"
-     },
-      "[javascriptreact]": {
-       "editor.formatOnSave": true,
-       "editor.defaultFormatter": "esbenp.prettier-vscode"
-     },
-     "prettier.semi": false,
-     "prettier.singleQuote": true
+  "editor.detectIndentation": false,
+  "editor.insertSpaces": true,
+  "editor.tabSize": 2,
+  "editor.codeActionsOnSave": { "source.fixAll.eslint": true },
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs":"active",
+  "[javascript]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "prettier.semi": false,
+  "prettier.singleQuote": true
 ```
 
-Note that each entry in your `settings.json` should end in a comma except for the last one, so if there are some existing entries you'll need to add a comma before     pasting the above lines
+**NOTE:** Each entry in your `settings.json` should end in a comma, except for the last one. If there are some existing entries you'll need to add a comma to the end of this line: `"prettier.singleQuote": true`.
 </details>
 
 <details>
@@ -315,7 +323,7 @@ nvm install --lts
 nvm alias default node
 ```
 
-6.3. To confirm, run this command. We're expecting something in the `v16.x` range
+6.3. To confirm, run this command. We're expecting something in the `v18.x` range
 
 ```sh
 nvm current
@@ -452,7 +460,7 @@ This is a quick and easy way to access your Linux files from windows if you ever
 npx --yes @devacademy/checklist
 ```
 
-You should see something like this (all ticks, no crosses, 0/x failed)
+You should see something like this (_all ticks, no crosses, 0/x failed_):
 
 ```
 Shell environment:
@@ -465,8 +473,8 @@ Node setup:
 
  [ ✓ ] /Users/gerard/.nvm exists
  [ ✓ ] NVM config found in ~/.zshrc
- [ ✓ ] Node version = v16.12.0
- [ ✓ ] NPM version = 8.19.2
+ [ ✓ ] Node version = v18.12.1
+ [ ✓ ] NPM version = 9.2.0
 
 Visual studio code:
 

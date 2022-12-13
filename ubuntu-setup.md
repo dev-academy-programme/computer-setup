@@ -101,22 +101,30 @@ In _VS Code_:
 Paste this content after the first line (`{`):
 
 ```json
- "editor.detectIndentation": false,
- "editor.insertSpaces": true,
- "editor.tabSize": 2,
- "editor.codeActionsOnSave": { "source.fixAll.eslint": true },
- "editor.bracketPairColorization.enabled": true,
- "editor.guides.bracketPairs":"active",
- "[javascript]": {
-   "editor.formatOnSave": true,
-   "editor.defaultFormatter": "esbenp.prettier-vscode"
- },
- "[javascriptreact]": {
-   "editor.formatOnSave": true,
-   "editor.defaultFormatter": "esbenp.prettier-vscode"
- },
- "prettier.semi": false,
- "prettier.singleQuote": true
+  "editor.detectIndentation": false,
+  "editor.insertSpaces": true,
+  "editor.tabSize": 2,
+  "editor.codeActionsOnSave": { "source.fixAll.eslint": true },
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs":"active",
+  "[javascript]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "prettier.semi": false,
+  "prettier.singleQuote": true
 ```
 
 **NOTE:** Each entry in your `settings.json` should end in a comma, except for the last one. If there are some existing entries you'll need to add a comma to the end of this line: `"prettier.singleQuote": true`.
@@ -190,7 +198,7 @@ Then, also in your terminal, run:
 nvm alias default node
 ```
 
-To confirm, run this command (_We're expecting something in the `v16.x` range_):
+To confirm, run this command (_We're expecting something in the `v18.x` range_):
 
 ```sh
 nvm current
@@ -301,8 +309,8 @@ Node setup:
 
  [ ✓ ] /Users/gerard/.nvm exists
  [ ✓ ] NVM config found in ~/.zshrc
- [ ✓ ] Node version = v16.12.0
- [ ✓ ] NPM version = 8.19.2
+ [ ✓ ] Node version = v18.12.1
+ [ ✓ ] NPM version = 9.2.0
 
 Visual studio code:
 

@@ -4,7 +4,7 @@
 
 ![Screen Shot of clicking on the copy button](https://user-images.githubusercontent.com/47387/161153831-7a3ca544-0ad2-4977-aec8-92436f1a6bc5.png)
 
-**Pro-tip #2** You might need to re-login to see the effects of changing your shell
+**Pro-tip #2:** You might need to re-login to see the effects of changing your shell
 
 ## 1. Installing the essentials
 

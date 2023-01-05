@@ -128,7 +128,7 @@ In VS Code:
 
 1. Click the Settings cog button in the bottom left and open the Command Palette.
 2. Type `settings.json` into the little search box that appears at the top of your screen.
-3. Click on the `Preferences: Open Settings (JSON)` option to open your `settings.json` config file.
+3. Click on the `Preferences: Open User Settings (JSON)` option to open your `settings.json` config file.
 
 4. Paste these contents inside the curly brackets:
 

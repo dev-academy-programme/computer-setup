@@ -106,7 +106,7 @@ Install the following VS Code extensions
 
 - ESLint
 - Prettier
-- Remote - WSL
+- WSL (the one by Microsoft)
 - Live Share
 - Handlebars (the one by André Junges)
 - vscode-icons (optional, but pretty :wink:)

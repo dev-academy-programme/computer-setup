@@ -419,8 +419,15 @@ and add the key to your agent:
 ssh-add ~/.ssh/id_ed25519
 ```
 
-Now you'll want to go to [[https://github.com/settings/keys]], click on "New SSH Key" and paste your
-new key into the textfield.
+Open the file in VS Code:
+
+```sh
+code ~/.ssh/id_ed25519.pub
+```
+
+Select-all and copy the key.
+
+Now you'll want to go to [[https://github.com/settings/keys]], click on "New SSH Key" and paste your new key into the textfield.
 
 9.4. **For these next two commands, replace the name and email with your own details**
 
@@ -438,30 +445,13 @@ git config --global user.email "your.name@example.com"
 
 9.5. If you prefer git to save your credentials instead of entering them each time, you can configure git to store them
 
-```sh
-git config --global credential.helper store
-```
-
-9.6. Run this command to make visual studio code your default editor for git commit messages
-
-```sh
-git config --global core.editor "code --wait"
-```
-
-9.7. Now go to your [github tokens page](https://github.com/settings/tokens) and create a new token
-
-- It can be called anything, but I use something like "home laptop"
-- It needs the "repo" permissions so make sure to check that checkbox
-- Set the expiration to 90 days, so that it lasts all bootcamp
-- **make sure you copy the token before you close that tab**
-
-  9.8. From your Ubuntu terminal, clone down `clone-a-repo-test`
+9.6. From your Ubuntu terminal, clone down `clone-a-repo-test`
 
 ```sh
 git clone https://github.com/dev-academy-foundations/clone-a-repo-test.git
 ```
 
-9.9. Now we're going change directory into the new directory:
+9.7. Now we're going change directory into the new directory:
 
 ```sh
 cd clone-a-repo-test
@@ -473,7 +463,7 @@ and open Visual Studio Code
 code .
 ```
 
-9.10. Now you should be looking at the clone-a-repo-test in your editor. Click on the `README.md` file to read the hidden message.
+9.8. Now you should be looking at the clone-a-repo-test in your editor. Click on the `README.md` file to read the hidden message.
 
 > Running `code .` from the ubuntu terminal is the way we will open Visual
 > Studio Code during this course. This ensures it opens in the Ubuntu context

@@ -263,8 +263,16 @@ and add the key to your agent:
 ssh-add ~/.ssh/id_ed25519
 ```
 
-Now you'll want to go to [[https://github.com/settings/keys]], click on "New SSH Key" and paste your
-new key into the textfield.
+Open the file in VS Code:
+
+```sh
+code ~/.ssh/id_ed25519.pub
+```
+
+Select-all and copy the key.
+
+Now you'll want to go to [[https://github.com/settings/keys]], click on "New SSH Key" and paste your new key into the textfield.
+
 
 **For these next two commands, replace the name and email with your own details**
 

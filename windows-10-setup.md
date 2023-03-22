@@ -8,7 +8,7 @@ Pro-tip: There's a copy button hidden in the top-right of each code block for ea
 
 We'll be doing all our work inside a Windows Subsystem for Linux (WSL) environment. This means you'll need to work through all the setup steps below, even if you've already been using node, VS Code, etc. in your Windows environment.
 
-There is also a video walkthrough of the setup [here](https://youtu.be/vMOvoB20flI) that you can refer to if you get stuck on any of the steps outlined below. 
+There is also a video walkthrough of the setup [here](https://youtu.be/vMOvoB20flI) that you can refer to if you get stuck on any of the steps outlined below.
 
 <details>
 <summary><b>1. Installing WSL</b></summary>
@@ -21,18 +21,18 @@ There is also a video walkthrough of the setup [here](https://youtu.be/vMOvoB20f
 - Confirm that your Windows is version 2004 and higher (Build 19041 and higher) or any Windows 11 version
 - If your Windows version is less than Build 19041, let one of the facilitators know
 
-1.2. Go to the Start Menu and open Windows Powershell as an Administrator
+  1.2. Go to the Start Menu and open Windows Powershell as an Administrator
 
 - Put this command in Powershell `wsl --install` and hit enter
 - Restart your computer
 
-1.3. Open Ubuntu from the Start Menu and let it finish installation:
+  1.3. Open Ubuntu from the Start Menu and let it finish installation:
 
 - When prompted, enter a username (e.g. your first name) and a password - this is the username that Linux will run as by default
 - **IMPORTANT:** When you type in your password, you will notice nothing happens, this is a feature in Linux for security purposes.
 - For Full Name, Room Number, etc. you can hit Enter to leave them blank
 - If it says installing for more than 5 minutes, close the Ubuntu window and re-open it
-</details>    
+</details>
 
 <details>
 <summary><b>2. Configure your Windows Terminal</b></summary>
@@ -79,8 +79,9 @@ Copy the value of the "guid" field, then paste it in to the `defaultProfile` pro
 
 Note that the `"source": "Windows.Terminal.Wsl",` line needs a comma at the end of it.
 
-If you see a 'network name cannot be found' error when you load windows terminal double check that the "name" part of the json (ie "Ubuntu20.04LTS" in the             above example) exactly matches the bit between `wsl$\\[exact-name-match-here]\\home` in the "startingDirectory" part.
-</details>    
+If you see a 'network name cannot be found' error when you load windows terminal double check that the "name" part of the json (ie "Ubuntu20.04LTS" in the above example) exactly matches the bit between `wsl$\\[exact-name-match-here]\\home` in the "startingDirectory" part.
+
+</details>
 
 <details>
 <summary><b>3. Setup Visual Studio Code</b></summary>
@@ -112,7 +113,7 @@ Install the following VS Code extensions
 - vscode-icons (optional, but pretty :wink:)
 - GitLens (optional)
 
-3.4 In your Ubuntu terminal, run:
+  3.4 In your Ubuntu terminal, run:
 
 ```shell
 code --list-extensions
@@ -128,8 +129,8 @@ vscode-icons-team.vscode-icons
 eamodio.gitlens
 ```
 
-*For some people, mysteriously, those IDs will not print out. This is okay and everything will be fine, you can move on. 
-     
+\*For some people, mysteriously, those IDs will not print out. This is okay and everything will be fine, you can move on.
+
 If you have installed these previously in Windows, you may have to reinstall them for
 WSL.
 
@@ -171,6 +172,7 @@ Paste these contents inside the curly brackets:
 ```
 
 **NOTE:** Each entry in your `settings.json` should end in a comma, except for the last one. If there are some existing entries you'll need to add a comma to the end of this line: `"prettier.singleQuote": true`.
+
 </details>
 
 <details>
@@ -240,7 +242,7 @@ If the prompt in your terminal is now a little arrow and a tilde (~), instead of
 
 Restart your terminal.
 
-If your terminal is opening at a `/` (or `[user]@machineId /`) prompt instead of a `~` (or `[user]@machineId ~`) prompt, this means the terminal 
+If your terminal is opening at a `/` (or `[user]@machineId /`) prompt instead of a `~` (or `[user]@machineId ~`) prompt, this means the terminal
 is opening at root and we need to change that.
 
 To make it open at home (`~`) instead. We're going to run this snippet to add a couple more lines to the bottom of your `~/.zshrc` file.
@@ -256,6 +258,7 @@ EOF
 Restart your terminal.
 
 You should now be at the home directory `~`.
+
 </details>    
      
 <details>      
@@ -269,7 +272,7 @@ NVM is a tool to install and manage NodeJS versions.
 type nvm
 ```
 
-If you see something like `nvm is a shell function from /home/username/.nvm/nvm.sh` you've already installed NVM and can go to section 6. 
+If you see something like `nvm is a shell function from /home/username/.nvm/nvm.sh` you've already installed NVM and can go to section 6.
 If you see a `nvm not found` message then keep reading.
 
 5.2. First, check if you have node installed
@@ -278,7 +281,7 @@ If you see a `nvm not found` message then keep reading.
 which node
 ```
 
-If that logs a path in "Program Files", you've installed NodeJS at some point with the official installer. 
+If that logs a path in "Program Files", you've installed NodeJS at some point with the official installer.
 Open Add/Remove Programs from the Start Menu and uninstall NodeJS.
 
 If it logs "node not found", that's perfect. We want NVM to manage node and npm on our dev machine.
@@ -289,7 +292,7 @@ If it logs "node not found", that's perfect. We want NVM to manage node and npm 
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 ```
 
- This command will initialise NVM when you open a terminal
+This command will initialise NVM when you open a terminal
 
 ```sh
 cat << 'EOF' >> ~/.zshrc
@@ -304,6 +307,7 @@ EOF
 ```sh
 omz reload
 ```
+
 </details>
     
 <details>    
@@ -328,6 +332,7 @@ nvm alias default node
 ```sh
 nvm current
 ```
+
 </details>
     
 <details>    
@@ -343,6 +348,7 @@ npx --yes @donothing/can-u-build-sqlite3
 ```
 
 If it succeeds it will log `Everything looks good`
+
 </details>
 
 </details>   
@@ -365,6 +371,7 @@ processors=2 # Makes the WSL2 VM use two virtual processors
 ```
 
 8.2. Restart your PC
+
 </details>
     
 <details>    
@@ -384,7 +391,48 @@ mkdir ~/devacademy
 cd ~/devacademy
 ```
 
-9.3. **For these next two commands, replace the name and email with your own details**
+9.3 Generate an SSH key pair
+
+There's a chance you have one of these. You can see a list of your public keys like this:
+
+```sh
+ls ~/.ssh/*.pub
+```
+
+If you can see one, skip to 9.4 Adding your ssh key to Github
+
+If you don't see any, then you can create one. Don't forget to replace the email address with your real one.
+
+```sh
+ssh-keygen -t ed25519 -C "your_email@example.com"
+```
+
+Hit enter 3 times to accept all the defaults.
+
+Now you need to start your ssh-agent:
+
+```sh
+eval "$(ssh-agent -s)"
+```
+
+and add the key to your agent:
+
+```sh
+ssh-add ~/.ssh/id_ed25519
+```
+
+9.4  Adding your ssh key to Github
+Open the file in VS Code:
+
+```sh
+code ~/.ssh/id_ed25519.pub
+```
+
+Select-all and copy the key.
+
+Now you'll want to go to [[https://github.com/settings/keys]], click on "New SSH Key" and paste your new key into the textfield.
+
+9.5. **For these next two commands, replace the name and email with your own details**
 
 You'll need to configure git to know your name...
 
@@ -398,24 +446,7 @@ git config --global user.name "Firstname Lastname"
 git config --global user.email "your.name@example.com"
 ```
 
-9.4. If you prefer git to save your credentials instead of entering them each time, you can configure git to store them
-
-```sh
-git config --global credential.helper store
-```
-
-9.5. Run this command to make visual studio code your default editor for git commit messages
-
-```sh
-git config --global core.editor "code --wait"
-```
-
-9.6. Now go to your [github tokens page](https://github.com/settings/tokens) and create a new token
-
-- It can be called anything, but I use something like "home laptop"
-- It needs the "repo" permissions so make sure to check that checkbox
-- Set the expiration to 90 days, so that it lasts all bootcamp
-- **make sure you copy the token before you close that tab**
+9.6. If you prefer git to save your credentials instead of entering them each time, you can configure git to store them
 
 9.7. From your Ubuntu terminal, clone down `clone-a-repo-test`
 
@@ -449,6 +480,7 @@ Explorer.exe .
 Windows explorer will open that directory.
 
 This is a quick and easy way to access your Linux files from windows if you ever need to.
+
 </details>
     
 <details>    
@@ -495,4 +527,5 @@ Build requirements (for node-gyp):
 
 RESULT: (0/21) checks failed
 ```
+
 </details>

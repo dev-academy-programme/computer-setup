@@ -273,6 +273,48 @@ and then change directory into it:
 cd ~/devacademy
 ```
 
+## 5.1 Generate an SSH key pair
+
+There's a chance you have one of these. You can see a list of your public keys like this:
+
+```sh
+ls ~/.ssh/*.pub
+```
+
+If you can see one, skip to 5.2 Adding your ssh key to Github
+
+If you don't see any, then you can create one. Don't forget to replace the email address with your real one.
+
+```sh
+ssh-keygen -t ed25519 -C "your_email@example.com"
+```
+
+Hit enter 3 times to accept all the defaults.
+
+Now you need to start your ssh-agent:
+
+```sh
+eval "$(ssh-agent -s)"
+```
+
+and add the key to your agent:
+
+```sh
+ssh-add ~/.ssh/id_ed25519
+```
+
+## 5.2 Adding your ssh key to Github
+
+Open the file in VS Code:
+
+```sh
+code ~/.ssh/id_ed25519.pub
+```
+
+Select-all and copy the key.
+
+Now you'll want to go to [[https://github.com/settings/keys]], click on "New SSH Key" and paste your new key into the textfield.
+
 **For these next two commands, replace the name and email with your own details**
 
 You'll need to configure git to know your name...
@@ -286,19 +328,6 @@ git config --global user.name "Firstname Lastname"
 ```sh
 git config --global user.email "your.name@example.com"
 ```
-
-If you prefer git to save your credentials instead of entering them each time, you can configure git to store them
-
-```sh
-git config --global credential.helper store
-```
-
-Now go to your [github tokens page](https://github.com/settings/tokens) and create a new token
-
-- It can be called anything, but I use something like "home laptop"
-- It needs the "repo" permissions so make sure to check that checkbox
-- Set the expiration to 90 days, so that it lasts all bootcamp
-- **make sure you copy the token before you close that tab**
 
 From your terminal, clone down `clone-a-repo-test`
 

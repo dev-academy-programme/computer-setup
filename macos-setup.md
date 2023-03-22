@@ -273,6 +273,37 @@ and then change directory into it:
 cd ~/devacademy
 ```
 
+## 5.1 Generate an SSH key pair
+
+There's a good chance you have one of these, you can see a list of your public keys like this:
+
+```sh
+ls ~/.ssh/*.pub
+```
+
+If you don't see any, then you can create one. Don't forget to replace the email address with your real one.
+
+```sh
+ssh-keygen -t ed25519 -C "your_email@example.com"
+```
+
+Hit enter 3 times to accept all the defaults.
+
+Now you need to start your ssh-agent:
+
+```sh
+eval "$(ssh-agent -s)"
+```
+
+and add the key to your agent:
+
+```sh
+ssh-add ~/.ssh/id_ed25519
+```
+
+Now you'll want to go to [[https://github.com/settings/keys]], click on "New SSH Key" and paste your
+new key into the textfield.
+
 **For these next two commands, replace the name and email with your own details**
 
 You'll need to configure git to know your name...

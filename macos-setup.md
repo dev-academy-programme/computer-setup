@@ -275,11 +275,13 @@ cd ~/devacademy
 
 ## 5.1 Generate an SSH key pair
 
-There's a good chance you have one of these, you can see a list of your public keys like this:
+There's a chance you have one of these. You can see a list of your public keys like this:
 
 ```sh
 ls ~/.ssh/*.pub
 ```
+
+If you can see one, skip to 5.2 Adding your ssh key to Github
 
 If you don't see any, then you can create one. Don't forget to replace the email address with your real one.
 
@@ -300,6 +302,8 @@ and add the key to your agent:
 ```sh
 ssh-add ~/.ssh/id_ed25519
 ```
+
+## 5.2 Adding your ssh key to Github
 
 Open the file in VS Code:
 

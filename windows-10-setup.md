@@ -393,11 +393,13 @@ cd ~/devacademy
 
 9.3 Generate an SSH key pair
 
-There's a good chance you have one of these, you can see a list of your public keys like this:
+There's a chance you have one of these. You can see a list of your public keys like this:
 
 ```sh
 ls ~/.ssh/*.pub
 ```
+
+If you can see one, skip to 9.4 Adding your ssh key to Github
 
 If you don't see any, then you can create one. Don't forget to replace the email address with your real one.
 
@@ -419,6 +421,7 @@ and add the key to your agent:
 ssh-add ~/.ssh/id_ed25519
 ```
 
+9.4  Adding your ssh key to Github
 Open the file in VS Code:
 
 ```sh
@@ -429,7 +432,7 @@ Select-all and copy the key.
 
 Now you'll want to go to [[https://github.com/settings/keys]], click on "New SSH Key" and paste your new key into the textfield.
 
-9.4. **For these next two commands, replace the name and email with your own details**
+9.5. **For these next two commands, replace the name and email with your own details**
 
 You'll need to configure git to know your name...
 
@@ -443,15 +446,15 @@ git config --global user.name "Firstname Lastname"
 git config --global user.email "your.name@example.com"
 ```
 
-9.5. If you prefer git to save your credentials instead of entering them each time, you can configure git to store them
+9.6. If you prefer git to save your credentials instead of entering them each time, you can configure git to store them
 
-9.6. From your Ubuntu terminal, clone down `clone-a-repo-test`
+9.7. From your Ubuntu terminal, clone down `clone-a-repo-test`
 
 ```sh
 git clone https://github.com/dev-academy-foundations/clone-a-repo-test.git
 ```
 
-9.7. Now we're going change directory into the new directory:
+9.8. Now we're going change directory into the new directory:
 
 ```sh
 cd clone-a-repo-test
@@ -463,7 +466,7 @@ and open Visual Studio Code
 code .
 ```
 
-9.8. Now you should be looking at the clone-a-repo-test in your editor. Click on the `README.md` file to read the hidden message.
+9.9. Now you should be looking at the clone-a-repo-test in your editor. Click on the `README.md` file to read the hidden message.
 
 > Running `code .` from the ubuntu terminal is the way we will open Visual
 > Studio Code during this course. This ensures it opens in the Ubuntu context

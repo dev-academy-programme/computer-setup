@@ -446,7 +446,11 @@ git config --global user.name "Firstname Lastname"
 git config --global user.email "your.name@example.com"
 ```
 
-9.6. If you prefer git to save your credentials instead of entering them each time, you can configure git to store them
+9.6. Run this command to make visual studio code your default editor for git commit messages
+
+```sh
+git config --global core.editor "code --wait"
+```
 
 9.7. From your Ubuntu terminal, clone down `clone-a-repo-test`
 

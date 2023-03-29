@@ -139,7 +139,7 @@ WSL.
 In VS Code:
 
 - click the Settings cog button in the bottom left and open the Command Palette.
-- type `settings.json` into the little search box that appears at the top of your scree
+- type `settings.json` into the little search box that appears at the top of your screen.
 - click on the `Preferences: Open User Settings (JSON)` option to open your `settings.json` config file.
 
 Paste these contents inside the curly brackets:

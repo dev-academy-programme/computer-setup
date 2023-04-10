@@ -332,7 +332,7 @@ git config --global user.email "your.name@example.com"
 From your terminal, clone down `clone-a-repo-test`
 
 ```sh
-git clone https://github.com/dev-academy-foundations/clone-a-repo-test.git
+git clone git@github.com:dev-academy-foundations/clone-a-repo-test.git
 ```
 
 Now we're going change directory into the new directory:

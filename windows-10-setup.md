@@ -455,7 +455,7 @@ git config --global core.editor "code --wait"
 9.7. From your Ubuntu terminal, clone down `clone-a-repo-test`
 
 ```sh
-git clone https://github.com/dev-academy-foundations/clone-a-repo-test.git
+git clone git@github.com:dev-academy-foundations/clone-a-repo-test.git
 ```
 
 9.8. Now we're going change directory into the new directory:

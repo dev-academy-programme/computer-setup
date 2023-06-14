@@ -509,9 +509,9 @@ You should see something like this (_all ticks, no crosses, 0/x failed_):
 ```
 Shell environment:
 
- [ ✓ ] darwin
+ [ ✓ ] wsl
  [ ✓ ] $SHELL = /bin/zsh
- [ ✓ ] ZSH version = zsh 5.8 (x86_64-apple-darwin21.0)
+ [ ✓ ] ZSH version = zsh 5.8 (x86_64-ubuntu-linux-gnu)
 
 Node setup:
 

@@ -106,7 +106,7 @@ Paste this content after the first line (`{`):
   "editor.detectIndentation": false,
   "editor.insertSpaces": true,
   "editor.tabSize": 2,
-  "editor.codeActionsOnSave": { "source.fixAll.eslint": true },
+  "editor.codeActionsOnSave": { "source.fixAll.eslint": "explicit" },
   "editor.bracketPairColorization.enabled": true,
   "editor.guides.bracketPairs":"active",
   "[javascript]": {

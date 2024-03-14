@@ -146,6 +146,11 @@ Run this command in your terminal:
 ```sh
 git config --global core.editor "code --wait"
 ```
+Run this command to force git to always use ssh urls for github.com
+
+```sh
+git config --global url.'git@github.com:'.insteadof https://github.com/
+```
 
 ### 4.4 Install NVM
 

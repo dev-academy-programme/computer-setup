@@ -183,6 +183,8 @@ Run this command in your terminal:
 git config --global core.editor "code --wait"
 ```
 
+
+
 ## 4. Preparing to use Node
 
 ### 4.1 Install NVM
@@ -335,6 +337,12 @@ git config --global user.name "Firstname Lastname"
 
 ```sh
 git config --global user.email "your.name@example.com"
+```
+
+run this command to configure git to always use ssh urls from github.com.
+
+```sh
+git config --global url.'git@github.com:'.insteadof https://github.com/
 ```
 
 From your terminal, clone down `clone-a-repo-test`

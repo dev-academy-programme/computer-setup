@@ -459,14 +459,19 @@ git config --global user.email "your.name@example.com"
 ```sh
 git config --global core.editor "code --wait"
 ```
+9.7 Run this command to force git to always use ssh urls for github.com
 
-9.7. From your Ubuntu terminal, clone down `clone-a-repo-test`
+```sh
+git config --global url.'git@github.com:'.insteadof https://github.com/
+```
+
+9.8. From your Ubuntu terminal, clone down `clone-a-repo-test`
 
 ```sh
 git clone git@github.com:dev-academy-foundations/clone-a-repo-test.git
 ```
 
-9.8. Now we're going change directory into the new directory:
+9.9. Now we're going change directory into the new directory:
 
 ```sh
 cd clone-a-repo-test
@@ -478,7 +483,7 @@ and open Visual Studio Code
 code .
 ```
 
-9.9. Now you should be looking at the clone-a-repo-test in your editor. Click on the `README.md` file to read the hidden message.
+9.10. Now you should be looking at the clone-a-repo-test in your editor. Click on the `README.md` file to read the hidden message.
 
 > Running `code .` from the ubuntu terminal is the way we will open Visual
 > Studio Code during this course. This ensures it opens in the Ubuntu context
@@ -486,7 +491,7 @@ code .
 Run this command in your Ubuntu terminal:
 
 ```sh
-Explorer.exe .
+wslview .
 ```
 
 Windows explorer will open that directory.
@@ -501,7 +506,7 @@ This is a quick and easy way to access your Linux files from windows if you ever
 10.1 Run this checklist to double-check everything:
 
 ```sh
-npx --yes @devacademy/checklist
+npx --yes @devacademy/checklist@latest
 ```
 
 You should see something like this (_all ticks, no crosses, 0/x failed_):

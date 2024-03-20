@@ -10,7 +10,15 @@ Pro-tip: There's a copy button hidden in the top-right of each code block for ea
 
 This guide is mostly running commands in the Terminal app.
 
-## 1. Configuring ZSH
+### 1. Installing XCode Command-line Developer Tools
+
+Running this command will show a system prompt, asking you to confirm in order to install the command-line developer tools:
+
+```sh
+xcode-select --install
+```
+
+## 2. Configuring ZSH
 
 MacOS ships with ZSH, to double check that you have it installed run this command in your terminal
 
@@ -28,7 +36,7 @@ chsh -s $(which zsh)
 
 Close and open a new terminal and if you are prompted to make a choice, choose `q`.
 
-### 1.1 Installing oh-my-zsh
+### 2.1 Installing oh-my-zsh
 
 We're going to install oh-my-zsh to make your terminal/shell experience a bit more pleasant.
 
@@ -42,7 +50,7 @@ Copy this command into your terminal
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
-### 1.2 Configuring ZSH
+### 2.2 Configuring ZSH
 
 Zsh installs a command `omz` to configure itself. To set your theme to "bira" run:
 
@@ -52,17 +60,9 @@ omz theme set bira
 
 Close your terminal and open a new one.
 
-## 2. Preparing build tools
+## 3. Preparing build tools
 
-### 2.1 Installing XCode Command-line Developer Tools
-
-Running this command will show a system prompt, asking you to confirm in order to install the command-line developer tools:
-
-```sh
-xcode-select --install
-```
-
-## 2.2 Setting up python
+## 3.2 Setting up python
 
 We need python installed and Mac OS ships with `python3`
 
@@ -82,7 +82,7 @@ python=$(which python3)
 EOF
 ```
 
-## 3. Setup Visual Studio Code
+## 4. Setup Visual Studio Code
 
 Install Visual Studio Code if it isn't already installed
 
@@ -96,7 +96,7 @@ code .
 
 If you see a 'command not found: code' error, try opening VS code by clicking on the Visual Studio Code program in your Applications folder and then open the command pallette (command + shift + p) and run `Shell Command: install 'code' command in PATH`.
 
-### 3.1 Installing extensions
+### 4.1 Installing extensions
 
 Install the following VS Code extensions
 
@@ -122,7 +122,7 @@ vscode-icons-team.vscode-icons
 eamodio.gitlens
 ```
 
-### 3.2 Visual Studio Code settings
+### 4.2 Visual Studio Code settings
 
 In VS Code:
 
@@ -175,7 +175,7 @@ Note that each entry in your `settings.json` should end in a comma except for th
 
 See [Accessibility of code in VS Code or the terminal](code-accessibility.md) for suggestions on how you might customise your setup for readability.
 
-### 3.3 Make VS Code your default Git editor
+### 4.3 Make VS Code your default Git editor
 
 Run this command in your terminal:
 
@@ -183,11 +183,9 @@ Run this command in your terminal:
 git config --global core.editor "code --wait"
 ```
 
+## 5. Preparing to use Node
 
-
-## 4. Preparing to use Node
-
-### 4.1 Install NVM
+### 5.1 Install NVM
 
 NVM is a tool to install and manage NodeJS versions.
 
@@ -254,7 +252,7 @@ To confirm, run this command. We're expecting something in the `v18.x` range
 nvm current
 ```
 
-### 4.3 Building sqlite3
+### 5.3 Building sqlite3
 
 `sqlite3` is a database package that we use a lot during bootcamp. At this point
 you should be set up with everything you need to build it.
@@ -267,7 +265,7 @@ npx --yes @donothing/can-u-build-sqlite3
 
 If it succeeds it will log `Everything looks good`
 
-## 5. Cloning your first repo
+## 6. Cloning your first repo
 
 We're going to clone a repo to make sure everything is working fine.
 
@@ -283,7 +281,7 @@ and then change directory into it:
 cd ~/devacademy
 ```
 
-## 5.1 Generate an SSH key pair
+## 6.1 Generate an SSH key pair
 
 There's a chance you have one of these. You can see a list of your public keys like this:
 
@@ -313,7 +311,7 @@ and add the key to your agent:
 ssh-add ~/.ssh/id_ed25519
 ```
 
-## 5.2 Adding your ssh key to Github
+## 6.2 Adding your ssh key to Github
 
 Open the file in VS Code:
 
@@ -345,6 +343,14 @@ run this command to configure git to always use ssh urls from github.com.
 git config --global url.'git@github.com:'.insteadof https://github.com/
 ```
 
+Since Mac OS generates `.DS_Store` files and we never want to commit them, we'll create a global excludes file for our user (this is three separate commands):
+
+```sh
+mkdir -p ~/.config/git
+echo '.DS_Store' >> ~/.config/git/ignore
+git config --global core.excludesFile="${HOME}/.config/git/ignore"
+```
+
 From your terminal, clone down `clone-a-repo-test`
 
 ```sh
@@ -373,7 +379,7 @@ open .
 
 Finder will open that directory
 
-## 6. You're all set up
+## 7. You're all set up
 
 Run this checklist to double-check everything:
 

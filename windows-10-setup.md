@@ -197,7 +197,7 @@ sudo apt-get update
 4.2. This will install all the packages we need (it might take a while):
 
 ```sh
-sudo apt-get install build-essential python-is-python3 zsh
+sudo apt-get install build-essential python-is-python3 zsh wslu
 ```
 
 4.3. Finally, this will set `zsh` as your default shell:
@@ -429,7 +429,7 @@ and add the key to your agent:
 ssh-add ~/.ssh/id_ed25519
 ```
 
-9.4  Adding your ssh key to Github
+9.4 Adding your ssh key to Github
 Open the file in VS Code:
 
 ```sh
@@ -459,6 +459,7 @@ git config --global user.email "your.name@example.com"
 ```sh
 git config --global core.editor "code --wait"
 ```
+
 9.7 Run this command to force git to always use ssh urls for github.com
 
 ```sh

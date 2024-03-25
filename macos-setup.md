@@ -348,7 +348,8 @@ Since Mac OS generates `.DS_Store` files and we never want to commit them, we'll
 ```sh
 mkdir -p ~/.config/git
 echo '.DS_Store' >> ~/.config/git/ignore
-git config --global core.excludesFile="${HOME}/.config/git/ignore"
+echo '/.vite' >> ~/.config/git/ignore
+git config --global core.excludesFile "${HOME}/.config/git/ignore"
 ```
 
 From your terminal, clone down `clone-a-repo-test`

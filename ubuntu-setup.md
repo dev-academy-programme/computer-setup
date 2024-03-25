@@ -152,6 +152,16 @@ Run this command to force git to always use ssh urls for github.com
 git config --global url.'git@github.com:'.insteadof https://github.com/
 ```
 
+There's certain files we always want git to ignore so this configures a global list of files to ignore
+
+```sh
+mkdir -p ~/.config/git
+echo '/.vite' >> ~/.config/git/ignore
+git config --global core.excludesFile "${HOME}/.config/git/ignore"
+```
+
+
+
 ### 4.4 Install NVM
 
 NVM is a tool to install and manage NodeJS versions.

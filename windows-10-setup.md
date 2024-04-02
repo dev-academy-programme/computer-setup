@@ -466,13 +466,19 @@ git config --global core.editor "code --wait"
 git config --global url.'git@github.com:'.insteadof https://github.com/
 ```
 
-9.8. From your Ubuntu terminal, clone down `clone-a-repo-test`
+9.8 Run this command to configure git to always use 'main' as the default branch (instead of 'master')
+
+```sh
+git config --global init.defaultBranch main
+```
+
+9.9. From your Ubuntu terminal, clone down `clone-a-repo-test`
 
 ```sh
 git clone git@github.com:dev-academy-foundations/clone-a-repo-test.git
 ```
 
-9.9. Now we're going change directory into the new directory:
+9.10. Now we're going change directory into the new directory:
 
 ```sh
 cd clone-a-repo-test
@@ -484,7 +490,7 @@ and open Visual Studio Code
 code .
 ```
 
-9.10. Now you should be looking at the clone-a-repo-test in your editor. Click on the `README.md` file to read the hidden message.
+9.11. Now you should be looking at the clone-a-repo-test in your editor. Click on the `README.md` file to read the hidden message.
 
 > Running `code .` from the ubuntu terminal is the way we will open Visual
 > Studio Code during this course. This ensures it opens in the Ubuntu context

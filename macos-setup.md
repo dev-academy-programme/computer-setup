@@ -343,6 +343,12 @@ run this command to configure git to always use ssh urls from github.com.
 git config --global url.'git@github.com:'.insteadof https://github.com/
 ```
 
+run this command to configure git to always use 'main' as the default branch (instead of 'master')
+
+```sh
+git config --global init.defaultBranch main
+```
+
 Since Mac OS generates `.DS_Store` files and we never want to commit them, we'll create a global excludes file for our user (this is three separate commands):
 
 ```sh

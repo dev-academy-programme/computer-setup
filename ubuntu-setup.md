@@ -305,6 +305,12 @@ git config --global user.name "Firstname Lastname"
 git config --global user.email "your.name@example.com"
 ```
 
+run this command to configure git to always use 'main' as the default branch (instead of 'master')
+
+```sh
+git config --global init.defaultBranch main
+```
+
 From your Ubuntu terminal, clone down `clone-a-repo-test`:
 
 ```sh

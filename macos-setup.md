@@ -289,7 +289,7 @@ There's a chance you have one of these. You can see a list of your public keys l
 ls ~/.ssh/*.pub
 ```
 
-If you can see one, skip to 5.2 Adding your ssh key to Github
+If you can see one, skip to 6.2 Adding your ssh key to Github
 
 If you don't see any, then you can create one. Don't forget to replace the email address with your real one.
 

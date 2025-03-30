@@ -549,7 +549,7 @@ Build requirements (for node-gyp):
  [ ✓ ] Found make = /usr/bin/make
  [ ✓ ] Found python version: Python 3.8.9 at /usr/bin/python3
 
-RESULT: (0/21) checks failed
+RESULT: (0/18) checks failed
 ```
 
 </details>

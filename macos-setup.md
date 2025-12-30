@@ -195,7 +195,7 @@ First, check if you have installed nvm before
 type nvm
 ```
 
-If you see something like `nvm is a shell function from /home/username/.nvm/nvm.sh` you've already installed NVM and can go to section 4.5, if you see a `nvm not found` message then keep reading.
+If you see something like `nvm is a shell function from /home/username/.nvm/nvm.sh` you've already installed NVM and can go to section 5.2, if you see a `nvm not found` message then keep reading.
 
 Next, check if you have node installed
 
@@ -230,7 +230,7 @@ Now run this command to reload your `~/.zshrc`
 omz reload
 ```
 
-### 4.2 Installing Node and NPM with NVM
+### 5.2 Installing Node and NPM with NVM
 
 Install the latest "Long Term Support" (i.e. very stable) version of node
 

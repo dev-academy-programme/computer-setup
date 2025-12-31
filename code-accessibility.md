@@ -12,7 +12,7 @@ Additionally, if you need hands-free coding, read [Josh W. Comeau's description 
   * For fine-grained control, you can modify the colours of specific "tokens" such as numbers or words like "const" and "return". [Here's an article](https://medium.com/@danromans/how-to-customize-semantic-token-colorization-with-visual-studio-code-ac3eab96141b) on how to do this
 - Typefaces
   * [This one](https://www.opendyslexic.org/) was specifically designed for dyslexic readers and comes in a "monospace" font, which is what is typically used in code editors
-- Font size, letter spacing, line spacing [(general guidance)](https://www.bdadyslexia.org.uk/advice/employers/creating-a-dyslexia-friendly-workplace/dyslexia-friendly-style-guide)
+- Font size, letter spacing, line spacing [(general guidance)](https://www2.worc.ac.uk/disabilityanddyslexia/documents/British%20Dyslexia%20Association%20Style%20Guide.pdf)
   * The editor is highly customisable within VS Code, and so is the integrated terminal. For example, using `"terminal.integrated.fontSize": 16` in your settings.json for VS Code. The markdown preview can also be customized with `"markdown.preview.lineHeight"`, `"markdown.preview.fontSize"`, and `"markdown.preview.fontFamily"`.
 - Magnification of entire interfaces (i.e. zooming in/out)
   * `"window.zoomLevel": 1.5` (or whatever value you choose) in your settings.json for VS Code
@@ -40,5 +40,3 @@ Additionally, if you need hands-free coding, read [Josh W. Comeau's description 
 These articles are primarily geared towards dyslexia, but include suggestions that may also be useful for people who are neurodivergent.
 * [Personalising VSCode for Dyslexia](https://jenn-hall.medium.com/personalising-vscode-for-dyslexia-60aac1a36b4d)
 * [Have Dyslexia? Make Coding Easier In Visual Studio Code](https://dev.to/deadlybyte/have-dyslexia-make-coding-easier-in-visual-studio-code-4kmg)
-* [Top tips for teaching people with dyslexia to code](https://blog.decoded.com/top-tips-for-teaching-people-with-dyslexia-to-code-ffc604668fe8)
-* [Dyslexia and Coding](https://datacarpentry.org/blog/2017/09/coding-and-dyslexia)

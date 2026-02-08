@@ -246,7 +246,7 @@ Then, also in your terminal, run:
 nvm alias default node
 ```
 
-To confirm, run this command. We're expecting something in the `v18.x` range
+To confirm, run this command. We're expecting something in the `v`20.x` or higher range
 
 ```sh
 nvm current

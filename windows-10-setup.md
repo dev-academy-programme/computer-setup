@@ -335,7 +335,7 @@ nvm install --lts
 nvm alias default node
 ```
 
-6.3. To confirm, run this command. We're expecting something in the `v18.x` range
+6.3. To confirm, run this command. We're expecting something in the `v`20.x` or higher range
 
 ```sh
 nvm current

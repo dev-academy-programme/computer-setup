@@ -196,7 +196,7 @@ sudo apt-get update
 4.2. This will install all the packages we need (it might take a while):
 
 ```sh
-sudo apt-get install build-essential python-is-python3 zsh wslu
+sudo apt-get install build-essential python-is-python3 zsh
 ```
 
 4.3. Finally, this will set `zsh` as your default shell:
@@ -497,7 +497,7 @@ code .
 Run this command in your Ubuntu terminal:
 
 ```sh
-wslview .
+explorer.exe .
 ```
 
 Windows explorer will open that directory.
